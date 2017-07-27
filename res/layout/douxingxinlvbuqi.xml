@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+      <LinearLayout
+        android:id="@+id/linearLayouttitle"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:background="#1e1d1d" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/qianlvse" >
+            <ImageView
+                android:id="@+id/mingci_imageview_gohome"
+                style="@style/title_right_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/back_n" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/txt_dxxlbq"
+                android:textColor="#fff"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+           
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+		android:layout_height="0dp"
+	    android:layout_weight="1.63"
+	    android:background="@color/gray_white"
+	    android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="\n概述：\n\u3000\u3000窦性心律不齐是心律失常的一种。可以在正常人出现，也可以在心脏病人身上出现。具体说是心脏跳动的不整齐，就是每次心跳的间隔不一样，一般情况下心跳的间隔是一样的。正常人的这种不整齐常会伴有心跳慢于60次/分。窦性心律的起源未变，但节律不整，在同一导联上P-P间期差异>0.12s称窦性心律不齐，常与窦性心动过缓同时存在。"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/bgColor"
+                android:textSize="22sp" />
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                    android:src="@drawable/douxingxinlvbuqi" />
+                
+                <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="\n预防与治疗：\n\u3000\u3000一般情况下，心跳节律是规律整齐的，如果心脏跳动不整齐，我们称其为心律失常。从这个角度上来说，“窦性心律不齐”是最常见的一种心律失常，是由于来自窦房结的信号并不完全规整所致。但是，这种“心律失常”大多数属于“呼吸性窦性心律不齐”，这是一种正常生理现象，它的特点是随呼吸的变化而变换，吸气时心率可增加数跳，呼气时又可减慢数跳，其快慢周期恰好等于一个呼吸周期，屏气时心律转为规则。这种随呼吸变化的“窦性心律不齐”是完全正常的，不必担心，也不用治疗。\n"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/bgColor"
+                android:textSize="22sp" />
+  
+		</LinearLayout>
+	</ScrollView>
+        
+
+</LinearLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_white" >
+    
+<ImageView
+    android:id="@+id/imageView1"
+    android:layout_width="90dp"
+    android:layout_height="108dp"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="50dp"
+    android:background="@drawable/llogo" />
+
+<EditText
+    android:id="@+id/et_UserPwd"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/et_UserName"
+    android:layout_alignRight="@+id/et_UserName"
+    android:layout_below="@+id/et_UserName"
+    android:layout_marginTop="15dp"
+    android:drawableLeft="@drawable/ic_login_password"
+    android:ems="10"
+    android:hint="密码/Password"
+    android:inputType="textPassword"
+    android:textSize="18sp" />
+
+<EditText
+    android:id="@+id/et_UserName"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/imageView1"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="80dp"
+    android:drawableLeft="@drawable/ic_login_user"
+    android:ems="10"
+    android:hint="账号/UserName"
+    android:textSize="18sp" >
+</EditText>
+
+<CheckBox
+    android:id="@+id/checkBox1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/et_UserPwd"
+    android:layout_centerHorizontal="true"
+    android:background="@color/light_white"
+    android:text="记住我"
+    android:textColor="#000000"
+    android:textSize="15dp" />
+
+<Button
+    android:id="@+id/btn_Ok"
+    android:layout_width="fill_parent"
+    android:layout_height="40dp"
+    android:layout_alignLeft="@+id/et_UserPwd"
+    android:layout_alignRight="@+id/et_UserPwd"
+    android:layout_below="@+id/checkBox1"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/anniu"
+    android:gravity="center"
+    android:text="登陆"
+    android:textColor="@color/light_white"
+    android:textSize="20sp" />
+
+<TextView
+    android:id="@+id/btn_forget"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/btn_Ok"
+    android:layout_below="@+id/btn_Ok"
+    android:layout_marginTop="25dp"
+    android:text="忘记密码"
+    android:textColor="@color/qianlvse"
+    android:textSize="20sp" />
+
+<TextView
+    android:id="@+id/btn_Register"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignRight="@+id/btn_Ok"
+    android:layout_below="@+id/btn_Ok"
+    android:layout_marginTop="25dp"
+    android:text="立即注册"
+    android:textColor="@color/qianlvse"
+    android:textSize="20sp" />
+
+</RelativeLayout>

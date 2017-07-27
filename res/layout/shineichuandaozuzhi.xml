@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayouttitle"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:background="#1e1d1d" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/qianlvse" >
+
+            <ImageView
+                android:id="@+id/mingci_imageview_gohome"
+                style="@style/title_right_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/back_n" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/user_sncdzu"
+                android:textColor="#fff"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+    
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+		android:layout_height="0dp"
+	    android:layout_weight="1.63"
+	    android:background="@color/gray_white"
+	    android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+	        <TextView
+	            android:id="@+id/textView1"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+	            android:singleLine="false"
+	            android:text="\n概述：\n\u3000\u3000室内传导阻滞是指希斯束分叉以下部位的传导阻滞。室内传导系统由三个部分组成：右束支、左前分支和左后分支，室内传导系统的病变可波及单支、双支或三支。\n\u3000\u3000右束支传导阻滞较为常见。永久性病变常发生于风湿性心脏病、高血压性心脏病、冠心病、心肌病与先天性心脏病。此外，正常人亦可发生右束支传导阻滞。左束支传导阻滞常发生于充血性心力衰竭、急性心肌梗塞、急性感染、奎尼丁与普鲁卡因胺中毒、高血压病、风湿性心脏病、冠心病与梅毒性心脏病。左前分支阻滞较为常见，左后分支阻滞则较为少见。单支、双支阻滞通常无临床症状。间可听到第二心音分裂。完全性三分支阻滞的临床表现与完全性房室传导阻滞相同。"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textColor="@color/bgColor"
+	            android:textSize="22sp" />
+			<ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                    android:src="@drawable/shineichuandaozuzhi" />
+	        <TextView
+	            android:id="@+id/textView2"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+	            android:singleLine="false"
+	            android:text="预防与治疗：\n\u3000\u3000慢性束支传导阻滞的患者如无症状，无需接受治疗。急性前壁心肌梗塞发生双分支、三公支阻滞，或慢性双分支、三分支阻滞，伴有 Adams-Stokes综合征发作者，则应及早考虑心脏起搏器治疗。\n"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textColor="@color/bgColor"
+	            android:textSize="22sp" />
+
+		</LinearLayout>
+	</ScrollView>
+
+</LinearLayout>

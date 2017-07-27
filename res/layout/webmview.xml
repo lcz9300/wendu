@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:background="@color/qianlvse"
+        android:orientation="vertical" >
+		
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center" >
+
+          <ImageView
+            android:id="@+id/buy_imageview_gohomech"
+            style="@style/title_right_button"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/back_n" />
+            <TextView
+                android:id="@+id/texttitleblood_webview"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:text=""
+                android:textColor="@color/TextColor"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/texttitlebloodPOWER"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/TextColor"
+                android:textSize="15sp" />
+			<ImageView
+			    android:id="@+id/wififalue"
+			    android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/texttitlebloodPOWER"
+                android:background="@drawable/wifi" />
+                 <WebView
+                     android:id="@+id/android_mwebview"
+                     android:layout_width="fill_parent"
+                     android:layout_height="match_parent"
+                     android:layout_below="@+id/texttitlebloodPOWER"
+                     
+                     android:visibility="visible" >
+
+</WebView>
+
+        </RelativeLayout>
+
+   
+    </LinearLayout>
+

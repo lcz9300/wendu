@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:fillViewport="true" 
+        android:background="@color/TextColor">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        
+        
+          <RelativeLayout
+        android:layout_width="match_parent"
+         android:background="#56cfc6"
+         android:id="@+id/layout1"
+        android:layout_height="50dp">
+
+        <ImageButton
+            android:id="@+id/calendarRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/calendarCenter"
+            android:background="@null"
+            android:contentDescription="@null"
+            android:padding="8dp"
+            android:src="@drawable/calendar_month_right" />
+
+        <TextView
+            android:id="@+id/calendarCenter"
+            style="@style/main_bar_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="8dp"
+            android:text="ddd" />
+
+        
+
+        <ImageButton
+            android:id="@+id/calendarLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+             android:background="@null"
+            android:layout_toLeftOf="@+id/calendarCenter"
+            android:src="@drawable/calendar_month_left" />
+
+        </RelativeLayout>
+        
+        
+        <com.BMDECG.view.CalendarView
+        android:id="@+id/calendar"
+        android:layout_below="@+id/layout1"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" />
+        
+              <View
+               android:layout_below="@+id/calendar"
+               android:id="@+id/view"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.0px"
+                        android:background="#FF3366" />
+        
+        
+              
+              
+         <LinearLayout
+                   android:id="@+id/templl"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:layout_below="@+id/view"
+                   android:orientation="horizontal" >
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:text="记录历史"
+                           android:layout_margin="15dp"
+                           android:textColor="#000000"
+                           android:textSize="20sp" />  
+               </LinearLayout> 
+               
+         <View
+               android:layout_below="@+id/templl"
+               android:id="@+id/view1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.0px"
+                        android:background="#FF3366" />
+
+         <LinearLayout
+             android:id="@+id/linearlayoutin"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:layout_alignParentLeft="true"
+             android:layout_below="@+id/templl"
+             android:orientation="vertical" >
+                       
+         </LinearLayout>
+              
+    </RelativeLayout>
+    
+
+</ScrollView>

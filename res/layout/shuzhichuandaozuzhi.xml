@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayouttitle"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:background="#1e1d1d" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/qianlvse" >
+
+            <ImageView
+                android:id="@+id/mingci_imageview_gohome"
+                style="@style/title_right_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/back_n" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/user_szcdzz"
+                android:textColor="#fff"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+    
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+		android:layout_height="0dp"
+	    android:layout_weight="1.63"
+	    android:background="@color/gray_white"
+	    android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+	        <TextView
+	            android:id="@+id/textView1"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+	            android:singleLine="false"
+	            android:text="\n概述：\n\u3000\u3000束支传导阻滞主要分为右束支传导阻滞和左束支传导阻滞。\n\u3000\u3000右束支阻滞(RBBB)可见于显然健康者.但在前壁心肌梗死时RBBB的出现提示实质性损害.在结节病,新出现的RBBB可能提示进行性心脏受损.虽然RBBB时QRS波群形态畸形,但不影响心肌梗死的诊断.暂时性RBBB可发生于肺梗死后。\n\u3000\u3000左束支阻滞(LBBB)曾被认为总是病理性的,且预后恶劣.但人群中普查出现LBBB也可能为良性的.LBBB使ECG其他诊断受干扰.无特殊治疗.有可能发展为心脏完全阻滞之虑.但除非PR延长,预防性安装起搏器无益。"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textColor="@color/bgColor"
+	            android:textSize="22sp" />
+	        
+	        <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                    android:src="@drawable/yousuzhichuandaozuzhi" />
+	        
+	        <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+	        		android:src="@drawable/zuosuzhichuandaozuzhi" />
+	        
+	        <TextView
+	            android:id="@+id/textView2"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+	            android:singleLine="false"
+	            android:text="\n预防和治疗：\n\u3000\u3000饮食保健：\n\u3000\u3000饮食宜清淡为主，注意卫生，合理搭配膳食。\n\u3000\u3000预防护理：\n\u3000\u30001.积极治疗病因，如针对冠状动脉疾患、高血压、肺心病、心肌炎等进行治疗，可防止室内阻滞的发生和发展。\n\u3000\u30002.适当劳逸，饮食有节，按时起居，适当参加体育锻炼。\n"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textColor="@color/bgColor"
+	            android:textSize="22sp" />
+
+
+		</LinearLayout>	
+	</ScrollView>
+
+</LinearLayout>

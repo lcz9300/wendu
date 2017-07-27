@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayouttitle"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:background="#1e1d1d" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/qianlvse" >
+
+            <ImageView
+                android:id="@+id/mingci_imageview_gohome"
+                style="@style/title_right_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/back_n" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/user_xsxc"
+                android:textColor="#fff"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+    
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+		android:layout_height="0dp"
+	    android:layout_weight="1.63"
+	    android:background="@color/gray_white"
+	    android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+        
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="\n概述：\n\u3000\u3000心室颤动是由于许多相互交叉的折返电活动波引起，其心电图表现为混乱的记录曲线在细胞水平，电活动可能还是存在的，但从心脏整体效应来看并无机械收缩，因无有效心排量。\n\u3000\u3000心室颤动（发生于无循环衰竭基础的原发性室颤，可呈短阵或持久发作，给药及时且治疗恰当的，有长期存活的可能。）为心室肌快而微弱的收缩或不协调的快速乱颤，其结果是心脏无排血，心音和脉搏消失，心、脑等器官和周围组织血液灌注停止，阿-斯综合征发作和猝死。室颤是导致心源性猝死的严重心律失常，也是临终前循环衰竭的心律改变。临终前室颤一般难以逆转。\n\n"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/bgColor"
+                android:textSize="22sp" />
+            
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                    android:src="@drawable/xinshixianchan" />
+                
+                <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="\n预防与治疗：
+
+　　\n\u3000\u3000心室扑动和心室颤动一旦发生即有效循环停止，应立即进行心肺脑复苏术。其抢救基本步骤如下：
+　　\n\n\u3000\u30001.立即实施基础生命支持 采用ABC方法。A：开放气道，清除呼吸道异物，维持呼吸道通畅;B：进行人工呼吸，16～20次/min，建立有效呼吸;C：进行心前区拳击，按压心脏100次/min，建立有效循环。ABC应在心室扑动、心室颤动发生后1～4min内开始，如5min后才实施，则脑复苏的可能性很小。
+　　\n\n\u3000\u30002.尽早进行进一步生命支持 如在8min内开始，其复苏成功率可达40%左右。方法如下：
+　　\n\u3000\u3000(1)非同步直流电击除颤复律：每延迟1min除颤，复苏的生存率即下降7%～10%。初次复律采用200J，争取一次成功。如未能复律，重复电击可增至300～360J，两次间隔一般为30～60s。但也有主张连续3次电击200J，300J， 360J。
+　　\n\u3000\u3000(2)尽早气管插管：应用呼吸机维持呼吸。
+　　\n\u3000\u3000(3)开通静脉通路：进行心电监护。
+　　\n\u3000\u3000(4)药物复律：对电击复律疗效不佳者，或心室颤动为细颤波型，应用以肾上腺素为主的复苏药物。肾上腺素以1mg静脉推注开始(必须要以弹丸式推注)，必要时每3～5分钟重复1次，剂量可逐渐加大。其他常用复苏药物有利多卡因、胺碘酮、托西溴苄铵(溴苄胺)、硫酸镁、普鲁卡因胺等。对于急性心肌梗死、心力衰竭、休克、心室肥大而发生的心室扑动或心室颤动的患者宜首选胺碘酮和早期补钾、补镁，使血钾维持在4.5mmol/L，血镁维持在1.2mmol/L左右，以提高复律成功率。复苏药常与直流电复律交替使用，如电击(360J)→药物→电击→药物……
+	\n\n\u3000\u30003.继续延长生命支持 又称三期复苏(或后期复苏)治疗。多年来许多学者致力于寻找心室颤动的先兆，以期做好预防或心脏复苏的准备，但到目前为止，尚未找到公认的有效措施，有以下一些比较一致的看法。
+	\n\u3000\u3000(1)预激综合征合并心房颤动者：应及时采用射频消融术等方法阻断房室旁路，使快速心房颤动(或心房扑动)不能下传心室，消除了产生心室颤动的病理基础。
+　　\n\u3000\u3000(2)β受体阻滞药：急性心肌梗死患者在发病后4～28天，用索他洛尔或普萘洛尔等β受体阻滞药，可以明显减少猝死的发生率。
+　　\n\u3000\u3000(3)R-on-T型室性期前收缩：在急性心肌梗死时由R-on-T室性期前收缩促发为室性心动过速与心室颤动分别仅占11%和6%，但亦应高度重视，及早用药物消除。此外，在病理性阵发性室性心动过速、长Q-T间期综合征、极短联律间期型多形性室性心动过速、Brugada综合征等恶性心律失常时均系R-on-T室性期前收缩所促发，在发作间歇期时亦可见到，应及早消除。
+　　\n\u3000\u3000(4)美国的CAST试验：证实用氟卡尼、恩卡尼(英卡胺)、莫雷西嗪(乙吗噻嗪)治疗急性心肌梗死后的恶性心律失常的结果是，用上述药物的治疗组的最终病死率高于安慰剂组。说明这些药物并不能降低病死率，对室性心动过速、心室颤动无预防作用。\n"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/bgColor"
+                android:textSize="22sp" />
+
+                </LinearLayout>
+  
+            </ScrollView>
+    
+   
+
+</LinearLayout>

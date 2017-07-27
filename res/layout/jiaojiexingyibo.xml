@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayouttitle"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:background="#1e1d1d" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/qianlvse" >
+
+            <ImageView
+                android:id="@+id/mingci_imageview_gohome"
+                style="@style/title_right_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/back_n" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/user_jjxyb"
+                android:textColor="#fff"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+    
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+		android:layout_height="0dp"
+	    android:layout_weight="1.63"
+	    android:background="@color/gray_white"
+	    android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+	        <TextView
+	            android:id="@+id/textView1"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+	            android:singleLine="false"
+	            android:text="\n概述：\n\u3000\u3000窦房结冲动频率减慢低于房室交界区潜在起搏点的频率或传导障碍窦房结冲动不能抵达起搏点部位，潜在起搏点除极产生逸搏。\n\n"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textColor="@color/bgColor"
+	            android:textSize="22sp" />
+			<ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                    android:src="@drawable/jiaojiexingyibo" />
+	        
+	         <TextView
+	            android:id="@+id/textView2"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+	            android:singleLine="false"
+	            android:text="\n预防与治疗：\n\u3000\u3000房室交界性逸搏或心律的出现与迷走神经张力增高、显著的窦性心动过缓或房室传导阻滞有关，它是防止心室停搏的生理性保护机制之一，通常无需治疗，必要时亦可行起搏治疗。
+	            \n\u3000\u3000适宜食物：
+　　\n\u3000\u30001、宜多吃对心脏有益的食物，如全麦、燕麦、糙米、扁豆、洋葱、蒜头、菇、茄子等。
+　　\n\u3000\u30002、宜多吃鹅肉、鸭肉等。
+　　\n\u3000\u3000饮食禁忌：
+　　\n\u3000\u30001、 忌食有刺激性的食物。
+　　\n\u3000\u30002、 少吃油炸食品。
+　　\n\u3000\u30003、 忌烟酒。\n"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textColor="@color/bgColor"
+	            android:textSize="22sp" />
+
+	</LinearLayout>
+	</ScrollView>
+
+</LinearLayout>

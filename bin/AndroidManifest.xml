@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.HWDTEMPT.hwdtempt"
+     android:versionCode="2"
+    android:versionName="2.0" >
+
+  <uses-sdk
+        android:minSdkVersion="18"
+        android:targetSdkVersion="21" />
+  <supports-screens  
+    android:smallScreens="true"  
+    android:normalScreens="true"  
+    android:largeScreens="true"  
+    android:resizeable="true"  
+    android:anyDensity="true" /> 
+  <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+   <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    
+       <uses-feature android:name="android.hardware.bluetooth_le" android:required="true" />  
+       
+       <application
+        android:icon="@drawable/ic_launcher"
+        android:name="com.HWDTEMPT.model.MyApplication"
+        android:label="@string/app_name" >
+     <activity
+                android:name="com.HWDTEMPT.hwdtempt.Welcome"
+            android:label="@string/app_name" 
+          
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                    <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            
+        </activity>
+      
+          <activity android:name="com.HWDTEMPT.hwdtempt.History"
+              android:screenOrientation="landscape" />
+         
+          <activity android:name="com.HWDTEMPT.hwdtempt.login_foget"
+            android:theme="@android:style/Theme.NoTitleBar"  />
+          
+          <activity android:name="com.HWDTEMPT.hwdtempt.Register"
+                android:windowSoftInputMode="stateVisible|adjustResize"
+            android:theme="@android:style/Theme.NoTitleBar"  />
+         
+         
+         
+         
+         
+       <activity android:name="com.HWDTEMPT.hwdtempt.App1"
+            android:theme="@android:style/Theme.NoTitleBar"  />
+        <activity android:name="com.HWDTEMPT.hwdtempt.GuideViewDoor" 
+            android:theme="@android:style/Theme.NoTitleBar" />
+          <activity android:name="com.HWDTEMPT.hwdtempt.GuideActivity"
+              android:theme="@android:style/Theme.NoTitleBar"  />
+        <activity android:name="com.HWDTEMPT.hwdtempt.App2" />
+         <activity android:name="com.HWDTEMPT.hwdtempt.App3"
+            android:theme="@android:style/Theme.NoTitleBar"  />
+        <activity android:name="com.HWDTEMPT.hwdtempt.App4" 
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity android:name="com.HWDTEMPT.hwdtempt.App5" 
+            android:theme="@android:style/Theme.NoTitleBar" />
+           <activity android:name="com.HWDTEMPT.hwdtempt.bdlishiactivity" 
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity  android:name="com.HWDTEMPT.hwdtempt.MainActivity" android:screenOrientation="portrait" 
+            android:theme="@android:style/Theme.NoTitleBar" />
+           <activity android:name="com.HWDTEMPT.hwdtempt.AboutActivity"
+               android:theme="@android:style/Theme.NoTitleBar"  />
+           <activity android:name="com.HWDTEMPT.hwdtempt.Qushi_Main"
+               android:theme="@android:style/Theme.NoTitleBar" />
+           <activity android:name="com.HWDTEMPT.hwdtempt.NetRegister"
+               android:theme="@android:style/Theme.NoTitleBar" />
+           <activity android:name="com.HWDTEMPT.hwdtempt.BloodPre"
+               android:theme="@android:style/Theme.NoTitleBar" />
+           <activity android:name="com.huicheng.ui.Ble_Activity"
+               android:theme="@android:style/Theme.NoTitleBar" />
+           <activity android:name="com.huichen.MainbleActivity"
+               android:theme="@android:style/Theme.NoTitleBar" />
+           <activity android:name="com.HWDTEMPT.hwdtempt.his_chaxun"
+               android:theme="@android:style/Theme.NoTitleBar" />
+           <activity android:name="com.HWDTEMPT.hwdtempt.BtConnect"
+               android:theme="@android:style/Theme.NoTitleBar" />
+           <activity android:name="com.HWDTEMPT.hwdtempt.EcgMonitor"
+               android:theme="@android:style/Theme.NoTitleBar" />
+           <activity android:name="com.HWDTEMPT.hwdtempt.bleactivty"
+               android:theme="@android:style/Theme.NoTitleBar" /> 
+         <activity android:name="com.HWDTEMPT.hwdtempt.bloodactivity"
+               android:theme="@android:style/Theme.NoTitleBar" /> 
+         <activity android:name="com.HWDTEMPT.hwdtempt.bloodknowledge"
+               android:theme="@android:style/Theme.NoTitleBar" /> 
+         <activity android:name="com.HWDTEMPT.hwdtempt.bloodrecord"
+               android:theme="@android:style/Theme.NoTitleBar" />  
+          <activity android:name="com.HWDTEMPT.hwdtempt.ChoiceHome"
+               android:theme="@android:style/Theme.NoTitleBar" />
+           <activity android:name="com.HWDTEMPT.hwdtempt.BlueEcg"
+               android:theme="@android:style/Theme.NoTitleBar" />
+           <activity android:name="com.HWDTEMPT.hwdtempt.PersonInfo"
+               android:theme="@android:style/Theme.NoTitleBar" />
+           <activity android:name="com.HWDTEMPT.hwdtempt.BluetoothList"
+               android:theme="@android:style/Theme.NoTitleBar" />
+            <activity android:name="com.HWDTEMPT.hwdtempt.xueyangActivity"
+               android:theme="@android:style/Theme.NoTitleBar" />
+            <activity android:name="com.HWDTEMPT.hwdtempt.bandbluedev"
+               android:theme="@android:style/Theme.NoTitleBar" />
+            <activity android:name="com.HWDTEMPT.hwdtempt.BuyActivity"
+               android:theme="@android:style/Theme.NoTitleBar" />
+            
+            
+  <activity android:name="User_GuidViewFliper" />
+    <service android:name="com.huicheng.service.BluetoothLeService" android:enabled="true"/>
+     <service android:name="com.huicheng.ui.BluetoothLeService" android:enabled="true"/>
+  </application>
+</manifest>

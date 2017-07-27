@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayouttitle"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:background="#1e1d1d" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/qianlvse" >
+
+            <ImageView
+                android:id="@+id/mingci_imageview_gohome"
+                style="@style/title_right_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/back_n" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/user_fxxlsc"
+                android:textColor="#fff"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+    
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+		android:layout_height="0dp"
+	    android:layout_weight="1.63"
+	    android:background="@color/gray_white"
+	    android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+	        <TextView
+	            android:id="@+id/textView1"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+	            android:singleLine="false"
+	            android:text="\n概述：\n\u3000\u3000房性心律失常包括房性期前收缩（激动起源于窦房结以外心房的任何部位）、房性心动过速（根据发生机制与心电图表现的不同，可分为自律性房性心动过速、拆返性房性心动过速、紊乱性房性心动过速）、心房扑动及心房纤维颤动。\n\n"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textColor="@color/bgColor"
+	            android:textSize="22sp" />
+	        
+	        <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                    android:src="@drawable/fangxingxinlvshichang" />
+	        
+	        <TextView
+	            android:id="@+id/textView2"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+	            android:singleLine="false"
+	            android:text="\n预防与治疗:\n\u3000\u3000房性心律失常是有多种原因引起的，一般是由于高血压、冠心病等引起的，生活不规律也可导致心律失常的发生，如紧张的情趣和睡眠不足，为了大家的身体健康，希望大家平时应注意加强生活中的调理，注意生活方式，远离各种疾病对大家带来的困扰。\n"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textColor="@color/bgColor"
+	            android:textSize="22sp" />
+	        </LinearLayout>
+
+
+	
+	</ScrollView>
+
+</LinearLayout>

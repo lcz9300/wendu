@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeyout"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_gravity="top"
+        android:background="#00BFFF"
+        android:gravity="fill_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/shouyebiaoti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="心狗妇温宝"
+            android:textColor="@color/TextColor"
+            android:textSize="50sp" >
+        </TextView>
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="82.0dip"
+            android:layout_height="82.0dip"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:contentDescription="@null"
+            android:src="@drawable/me_head_bg" />
+
+        <com.HWDTEMPT.widget.CircularImage
+            android:id="@+id/cover_user_photo"
+            android:layout_width="74.0dip"
+            android:layout_height="74.0dip"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:id="@+id/relative_shouye_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cover_user_photo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text=""
+            android:textColor="@color/TextColor"
+            android:textSize="18sp" >
+        </TextView>
+
+        <ImageView
+            android:id="@+id/imag_pop"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/shouyebiaoti"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/popwindow_selector" />
+
+        <!--
+           <ImageView
+            android:id="@+id/quit_btn_shouye"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/imag_pop"    
+           android:background="@drawable/gnome_logout"  />
+        -->
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="274dp"
+        android:layout_gravity="bottom"
+        android:layout_weight="0.07"
+        android:background="@color/TextColor"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <RelativeLayout
+            android:id="@+id/relative_xindian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+     
+            android:orientation="vertical" >
+
+            <!--
+                <ImageView
+                    android:id="@+id/xueyang_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:layout_below="@+id/relative_xindian_txt"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/xueyang2" >
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/xueyang_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/xueyang_img"
+                    android:layout_marginLeft="35dp"
+                    android:text="血氧"
+                    android:textColor="@color/xueya"
+                    android:textColorHint="@color/backColor"
+                    android:textSize="20sp" >
+                </TextView>
+            -->
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout_xueyaxindian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+       
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/releative_xueyaxindian_img"
+                android:layout_width="wrap_content"
+                android:layout_height="400dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/celiangwendu" >
+            </ImageView>
+
+            <TextView
+                android:id="@+id/releative_xueyaxindian_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/releative_xueyaxindian_img"
+                android:layout_marginLeft="65dp"
+                android:text="体温"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/xueya"
+                android:textColorHint="@color/backColor"
+                android:textSize="25sp" >
+            </TextView>
+
+            <!--
+                <ImageView
+                    android:id="@+id/xuetang_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:layout_below="@+id/releative_xueyaxindian_txt"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/xuetang" >
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/xuetang_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/xuetang_img"
+                    android:layout_marginLeft="35dp"
+                    android:text="血糖"
+                    android:textColor="@color/xueya"
+                    android:textColorHint="@color/backColor"
+                    android:textSize="20sp" >
+                </TextView>
+            -->
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

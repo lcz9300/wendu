@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFBBFFBB"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/popwindow_per"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="个人信息"
+        android:textSize="20sp" />
+
+   <TextView
+       android:id="@+id/popwindow_buy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="产品购买"
+        android:textSize="20sp" />
+   <TextView
+       android:id="@+id/popwindow_shebei"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="设备类型"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/popwindow_site"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="官方网站"
+        android:textSize="20sp" />
+
+</LinearLayout>

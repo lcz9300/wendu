@@ -1,0 +1,729 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayouttitle"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#1e1d1d" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/qianlvse" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/txt_mcjs"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.63"
+        android:background="@color/gray_white"
+        android:orientation="vertical"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingBottom="15dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="15dp"
+            android:layout_gravity="fill_horizontal"
+            android:orientation="vertical" >
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray_white"
+                android:columnCount="4"
+                android:orientation="vertical"
+                android:paddingTop="25dp" >
+
+                <Button
+                    android:id="@+id/Button01"
+                    android:layout_width="240dp"
+                    android:layout_height="95dp"
+                    android:layout_column="0"
+                    android:layout_gravity="left|top"
+                    android:layout_margin="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_row="0"
+                    android:background="@drawable/btn_register"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/txt_zcdxxl"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/table_background"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/Button03"
+                    android:layout_width="240dp"
+                    android:layout_height="45dp"
+                    android:layout_column="1"
+                    android:layout_gravity="left|bottom"
+                    android:layout_margin="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_row="0"
+                    android:background="@drawable/btn_register"
+                    android:text="@string/txt_dxxdgh"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/table_background"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/Button05"
+                    android:layout_width="240dp"
+                    android:layout_height="45dp"
+                    android:layout_column="3"
+                    android:layout_gravity="left|bottom"
+                    android:layout_margin="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_row="0"
+                    android:background="@drawable/btn_register"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/txt_dxxlbq"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/table_background"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/Button04"
+                    android:layout_width="240dp"
+                    android:layout_height="45dp"
+                    android:layout_column="1"
+                    android:layout_gravity="center_horizontal|top"
+                    android:layout_margin="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_row="0"
+                    android:background="@drawable/btn_register"
+                    android:text="@string/txt_dxxdgs"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/table_background"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/Button02"
+                    android:layout_width="240dp"
+                    android:layout_height="45dp"
+                    android:layout_column="3"
+                    android:layout_gravity="center_horizontal|top"
+                    android:layout_margin="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_row="0"
+                    android:background="@drawable/btn_register"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/txt_dxtb"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/table_background"
+                    android:textSize="18sp" />
+
+            </GridLayout>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray_white"
+                android:columnCount="2"
+                android:orientation="vertical"
+                android:paddingTop="25dp" >
+
+                <Button
+                    android:id="@+id/Button08"
+                    android:layout_width="240dp"
+                    android:layout_height="95dp"
+                    android:layout_column="0"
+                    android:layout_gravity="left|top"
+                    android:layout_margin="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_row="0"
+                    android:background="@drawable/btn_register"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/txt_zb"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/table_background"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/Button09"
+                    android:layout_width="240dp"
+                    android:layout_height="45dp"
+                    android:layout_column="1"
+                    android:layout_gravity="left|top"
+                    android:layout_margin="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_row="0"
+                    android:background="@drawable/btn_register"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/txt_fxzb"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/table_background"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/Button06"
+                    android:layout_width="240dp"
+                    android:layout_height="45dp"
+                    android:layout_column="1"
+                    android:layout_gravity="right|top"
+                    android:layout_margin="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_row="0"
+                    android:background="@drawable/btn_register"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/txt_jxxzb"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/table_background"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/Button10"
+                    android:layout_width="240dp"
+                    android:layout_height="45dp"
+                    android:layout_column="1"
+                    android:layout_gravity="left|bottom"
+                    android:layout_margin="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_row="0"
+                    android:background="@drawable/btn_register"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/txt_sxzb"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/table_background"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/Button07"
+                    android:layout_width="240dp"
+                    android:layout_height="45dp"
+                    android:layout_column="1"
+                    android:layout_gravity="right|bottom"
+                    android:layout_margin="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_row="0"
+                    android:background="@drawable/btn_register"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/txt_zbyf"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/table_background"
+                    android:textSize="18sp" />
+            </GridLayout>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray_white"
+                android:columnCount="2"
+                android:orientation="vertical"
+                android:paddingTop="25dp" >
+
+                <Button
+                    android:id="@+id/Button13"
+                    android:layout_width="240dp"
+                    android:layout_height="95dp"
+                    android:layout_column="0"
+                    android:layout_gravity="left|top"
+                    android:layout_margin="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_row="0"
+                    android:background="@drawable/btn_register"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/user_sncdzu"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/table_background"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/Button11"
+                    android:layout_width="240dp"
+                    android:layout_height="45dp"
+                    android:layout_column="1"
+                    android:layout_gravity="left|top"
+                    android:layout_margin="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_row="0"
+                    android:background="@drawable/btn_register"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/user_szcdzz"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/table_background"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/Button12"
+                    android:layout_width="240dp"
+                    android:layout_height="45dp"
+                    android:layout_column="1"
+                    android:layout_gravity="right|top"
+                    android:layout_margin="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_row="0"
+                    android:background="@drawable/btn_register"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/user_sfzcdzz"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/table_background"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/Button15"
+                    android:layout_width="240dp"
+                    android:layout_height="45dp"
+                    android:layout_column="1"
+                    android:layout_gravity="left|bottom"
+                    android:layout_margin="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_row="0"
+                    android:background="@drawable/btn_register"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/user_fzcdzz"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/table_background"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/Button14"
+                    android:layout_width="240dp"
+                    android:layout_height="45dp"
+                    android:layout_column="1"
+                    android:layout_gravity="right|bottom"
+                    android:layout_margin="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_row="0"
+                    android:background="@drawable/btn_register"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/user_scszcdzz"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/table_background"
+                    android:textSize="18sp" />
+            </GridLayout>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray_white"
+                android:columnCount="2"
+                android:orientation="vertical"
+                android:paddingTop="25dp" >
+
+                <Button
+                    android:id="@+id/Button27"
+                    android:layout_width="240dp"
+                    android:layout_height="95dp"
+                    android:layout_column="0"
+                    android:layout_gravity="left|top"
+                    android:layout_margin="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_row="0"
+                    android:background="@drawable/btn_register"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/user_fxxlsc"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/table_background"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/Button30"
+                    android:layout_width="240dp"
+                    android:layout_height="45dp"
+                    android:layout_column="1"
+                    android:layout_gravity="left|top"
+                    android:layout_margin="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_row="0"
+                    android:background="@drawable/btn_register"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/user_fxyb"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/table_background"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/Button26"
+                    android:layout_width="240dp"
+                    android:layout_height="45dp"
+                    android:layout_column="1"
+                    android:layout_gravity="right|top"
+                    android:layout_margin="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_row="0"
+                    android:background="@drawable/btn_register"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/user_xfpd"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/table_background"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/Button29"
+                    android:layout_width="240dp"
+                    android:layout_height="45dp"
+                    android:layout_column="1"
+                    android:layout_gravity="left|bottom"
+                    android:layout_margin="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_row="0"
+                    android:background="@drawable/btn_register"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/user_fxxdgs"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/table_background"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/Button28"
+                    android:layout_width="240dp"
+                    android:layout_height="45dp"
+                    android:layout_column="1"
+                    android:layout_gravity="right|bottom"
+                    android:layout_margin="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_row="0"
+                    android:background="@drawable/btn_register"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/user_xfxc"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/table_background"
+                    android:textSize="18sp" />
+            </GridLayout>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray_white"
+                android:columnCount="2"
+                android:orientation="vertical"
+                android:paddingTop="25dp" >
+
+                <Button
+                    android:id="@+id/Button16"
+                    android:layout_width="240dp"
+                    android:layout_height="95dp"
+                    android:layout_column="0"
+                    android:layout_gravity="left|top"
+                    android:layout_margin="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_row="0"
+                    android:background="@drawable/btn_register"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/user_sxxlsc"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/table_background"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/Button20"
+                    android:layout_width="240dp"
+                    android:layout_height="45dp"
+                    android:layout_column="1"
+                    android:layout_gravity="left|top"
+                    android:layout_margin="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_row="0"
+                    android:background="@drawable/btn_register"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/user_sxyb"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/table_background"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/Button17"
+                    android:layout_width="240dp"
+                    android:layout_height="45dp"
+                    android:layout_column="1"
+                    android:layout_gravity="right|top"
+                    android:layout_margin="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_row="0"
+                    android:background="@drawable/btn_register"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/user_xspd"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/table_background"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/Button18"
+                    android:layout_width="240dp"
+                    android:layout_height="45dp"
+                    android:layout_column="1"
+                    android:layout_gravity="left|bottom"
+                    android:layout_margin="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_row="0"
+                    android:background="@drawable/btn_register"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/user_sxxdgs"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/table_background"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/Button19"
+                    android:layout_width="240dp"
+                    android:layout_height="45dp"
+                    android:layout_column="1"
+                    android:layout_gravity="right|bottom"
+                    android:layout_margin="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_row="0"
+                    android:background="@drawable/btn_register"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/user_xsxc"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/table_background"
+                    android:textSize="18sp" />
+
+            </GridLayout>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray_white"
+                android:columnCount="2"
+                android:orientation="vertical"
+                android:paddingTop="25dp" >
+
+                <Button
+                    android:id="@+id/Button21"
+                    android:layout_width="240dp"
+                    android:layout_height="95dp"
+                    android:layout_column="0"
+                    android:layout_gravity="left|top"
+                    android:layout_margin="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_row="0"
+                    android:background="@drawable/btn_register"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/user_jjxxlsc"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/table_background"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/Button25"
+                    android:layout_width="240dp"
+                    android:layout_height="45dp"
+                    android:layout_column="1"
+                    android:layout_gravity="left|top"
+                    android:layout_margin="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_row="0"
+                    android:background="@drawable/btn_register"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/user_jjxyb"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/table_background"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/Button22"
+                    android:layout_width="240dp"
+                    android:layout_height="45dp"
+                    android:layout_column="1"
+                    android:layout_gravity="right|top"
+                    android:layout_margin="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_row="0"
+                    android:background="@drawable/btn_register"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/user_fzfxxjjqxdgs"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/table_background"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/Button23"
+                    android:layout_width="240dp"
+                    android:layout_height="45dp"
+                    android:layout_column="1"
+                    android:layout_gravity="left|bottom"
+                    android:layout_margin="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_row="0"
+                    android:background="@drawable/btn_register"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/user_fsjfxxdgs"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/table_background"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/Button24"
+                    android:layout_width="240dp"
+                    android:layout_height="45dp"
+                    android:layout_column="1"
+                    android:layout_gravity="right|bottom"
+                    android:layout_margin="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_row="0"
+                    android:background="@drawable/btn_register"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/user_wxzxxjjqxdgs"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/table_background"
+                    android:textSize="18sp" />
+            </GridLayout>
+<GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray_white"
+                android:columnCount="2"
+                android:orientation="vertical"
+                android:paddingTop="25dp" >
+                 <Button
+                    android:id="@+id/Button_xueya"
+                    android:layout_width="240dp"
+                    android:layout_height="95dp"
+                    android:layout_column="0"
+                    android:layout_gravity="left|top"
+                    android:layout_margin="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_row="0"
+                    android:background="@drawable/btn_register"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/user_bloodpre"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/table_background"
+                    android:textSize="16sp" />
+                  <Button
+                     android:id="@+id/buttonxueyajieshi"
+                     android:layout_width="240dp"
+                    android:layout_height="45dp"
+                    android:layout_column="1"
+                    android:layout_gravity="left|top"
+                    android:layout_margin="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_row="0"
+                    android:background="@drawable/btn_register"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/user_bloodpre1"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/table_background"
+                    android:textSize="15sp"  />
+                 <Button
+                    android:id="@+id/Buttonxueyashuoming"
+                android:layout_width="240dp"
+                    android:layout_height="45dp"
+                    android:layout_column="1"
+                    android:layout_gravity="left|bottom"
+                    android:layout_margin="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_row="0"
+                    android:background="@drawable/btn_register"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/user_bloodpre2"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/table_background"
+                    android:textSize="15sp" />
+                </GridLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

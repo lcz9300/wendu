@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_white"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/qianlvse"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" 
+            android:layout_gravity="center">
+          <ImageView
+            android:id="@+id/bloodback_imageview_gohomeblood"
+            style="@style/title_right_button"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/back_n" />
+            <TextView
+                android:id="@+id/texttitleblood"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="血压检测"
+                android:textColor="@color/TextColor"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/texttitlebloodPOWER"
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/TextColor"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="1dp" >
+
+        <TextView
+            android:id="@+id/textshuzhangya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="50dp"
+            android:text="高压:"
+            android:textColor="@color/gray"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/textmghn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/textshuzhangya"
+            android:layout_below="@+id/textshuzhangya"
+            android:layout_marginTop="10dp"
+            android:text="mmHg"
+            android:textColor="@color/gray"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/textmg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView3"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_toRightOf="@+id/textshuzhangya"
+            android:text="--"
+            android:textColor="@color/xueya"
+            android:textSize="70sp" />
+	
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/red" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="10dp"
+            android:text="低压:"
+            android:textColor="@color/gray"
+            android:textSize="50sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/textView1"
+            android:layout_below="@+id/textView1"
+            android:layout_marginTop="10dp"
+            android:text="mmHg"
+            android:textColor="@color/gray"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/textshousuomg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/textView1"
+            android:text="--"
+            android:textColor="@color/xueya"
+            android:textSize="70sp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="150dp"
+            android:src="@drawable/yellow" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp" >
+
+        <TextView
+            android:id="@+id/textViewbxinlv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="10dp"
+            android:text="脉搏:"
+            android:textColor="@color/gray"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/textViewxinlv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/textViewbxinlv"
+            android:text="--"
+            android:textColor="@color/xueya"
+            android:textSize="70sp" />
+
+        <TextView
+            android:id="@+id/textViewxinlv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/textViewbxinlv"
+            android:layout_below="@+id/textViewbxinlv"
+            android:layout_marginTop="10dp"
+            android:text="Beats/Min"
+            android:textColor="@color/gray"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:src="@drawable/greaen" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textViewceliangzhong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="00"
+            android:textColor="@color/gray"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/textView4xueyabiaoqian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="20dp"
+            android:text=""
+            android:textColor="@color/gray"
+            android:textSize="20sp" />
+    </RelativeLayout>
+<RelativeLayout
+         android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        >
+
+    <Button
+        android:id="@+id/btn_celiang"
+        android:layout_width="400dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/anniu"
+        android:text="开始"
+        android:textColor="@color/TextColor"
+        android:textSize="50sp" />
+
+    <Button
+        android:id="@+id/btn_savexueya"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/btn_celiang"
+        android:layout_below="@+id/btn_celiang"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/anniu"
+        android:text="保存"
+        android:textColor="@color/TextColor"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/btn_unsavexueya"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignRight="@+id/btn_celiang"
+        android:layout_below="@+id/btn_celiang"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/anniu"
+        android:text="放弃"
+        android:textColor="@color/TextColor"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/next_monitor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"       
+        android:layout_gravity="right"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:gravity="right"
+        android:text=""
+        android:textColor="@color/bgColor"
+        android:textSize="18sp" />
+
+</RelativeLayout>
+</LinearLayout>

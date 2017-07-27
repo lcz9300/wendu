@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayouttitle"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:background="#1e1d1d" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/qianlvse" >
+
+            <ImageView
+                android:id="@+id/mingci_imageview_gohome"
+                style="@style/title_right_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/back_n" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/user_fzcdzz"
+                android:textColor="#fff"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+    
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+		android:layout_height="0dp"
+	    android:layout_weight="1.63"
+	    android:background="@color/gray_white"
+	    android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+	        <TextView
+	            android:id="@+id/textView1"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+	            android:singleLine="false"
+	            android:text="\n概述：\n\u3000\u3000分支传导阻滞分为左前分支传导阻滞和右前分支传导阻滞。\n\u3000\u3000左前分支传导阻滞又称左前半阻滞。左前分支是左束支较细长的分支，在室间隔的位置表浅，易发生缺血性损伤。\n\u3000\u3000左前分支阻滞男、女发病比约为4∶1，男性较多见。发病年龄为15－88岁，男性发病年龄平均为61.41岁，女性一般为 59.83 岁。左前分支阻滞本身无明显的临床症状与体征。左后分支传导阻滞又称左后半阻滞。左后分支阻滞本身无明显症状，如其合并右束支阻滞，则会出现晕厥、抽搐等。\n\u3000\u3000左后分支阻滞常见的病因有冠心病，在心肌梗死时的发生率为1%左右，因为需多支血管堵塞导致前壁合并下壁及右心室梗死，或前降支病变导致室间隔广泛缺血、坏死时才可能出现，并且极少单独出现。其他尚有高血压病、心肌病、心肌炎、主动脉瓣病变或室内传导系统退行性变、夹层动脉瘤、急性肺心病、主动脉弓缩窄、高血钾等。也可见于健康人。\n"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textColor="@color/bgColor"
+	            android:textSize="22sp" />
+	        
+	        <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                    android:src="@drawable/zuoqianfenzhichuandaozuzhi" />
+	        <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                    android:src="@drawable/zuohoufenzhichuandaozuzhi" />
+	        
+	        <TextView
+	            android:id="@+id/textView2"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+	            android:singleLine="false"
+	            android:text="\n预防和治疗：\n\u3000\u30001.积极治疗病因，如针对冠状动脉疾患、高血压、肺心病、心肌炎等进行治疗，可防止室内阻滞的发生和发展。\n\u3000\u30002.适当劳逸，饮食有节，按时起居，适当参加体育锻炼。\n"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textColor="@color/bgColor"
+	            android:textSize="22sp" />
+	        
+
+
+		</LinearLayout>
+	</ScrollView>
+
+</LinearLayout>

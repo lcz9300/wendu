@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+      <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/qianlvse"
+        android:orientation="vertical" >           
+       		
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" 
+            android:layout_gravity="center">
+          <ImageView
+            android:id="@+id/ecghisback_imageview_gohomexueyang"
+            style="@style/title_right_button"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/back_n" />
+
+           <TextView
+               android:id="@+id/KLLL"
+               android:layout_width="1dp"
+               android:layout_height="30dp"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+               android:layout_toRightOf="@+id/ecghisback_imageview_gohomexueyang"
+               android:background="@color/TextColor" >
+               
+           </TextView>
+            <TextView
+                android:id="@+id/texttitlexueyang"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+               
+                android:gravity="center"
+                android:layout_centerInParent="true"
+               android:layout_toRightOf="@+id/KLLL"
+                android:layout_marginLeft="5dp"
+                android:text="心电图像"
+                android:textColor="@color/TextColor"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/texttimehis"
+                android:layout_width="220dp"
+                android:layout_height="20dp"
+                android:layout_toRightOf="@+id/texttitlexueyang"
+                android:layout_marginTop="20dp"
+                android:textSize="15sp"
+                android:text=""
+                android:textColor="@color/TextColor"/>
+            <TextView
+                android:id="@+id/gainttxt"
+                android:layout_width="220dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:textSize="15sp"
+                android:text="走速:25mm/s   增益:10mm/mV"
+                android:textColor="@color/TextColor"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    
+   <!--  <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp">  -->      
+        <RelativeLayout
+            android:id="@+id/linearviewtop"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"/>            
+<!-- </LinearLayout> -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+       
+        <RelativeLayout
+            android:id="@+id/linewwwleft"
+            android:layout_width="24dp"
+            android:layout_height="fill_parent"/>
+        
+        <HorizontalScrollView
+          android:id="@+id/Scrolview1"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"         
+          android:scrollbars="horizontal" >
+
+          <RelativeLayout
+              android:id="@+id/linear"              
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent" >
+          </RelativeLayout>
+      </HorizontalScrollView>
+    </LinearLayout>
+
+</LinearLayout>

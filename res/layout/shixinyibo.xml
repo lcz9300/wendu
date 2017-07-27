@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayouttitle"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:background="#1e1d1d" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/qianlvse" >
+
+            <ImageView
+                android:id="@+id/mingci_imageview_gohome"
+                style="@style/title_right_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/back_n" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/user_sxyb"
+                android:textColor="#fff"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+    
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+		android:layout_height="0dp"
+	    android:layout_weight="1.63"
+	    android:background="@color/gray_white"
+	    android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+	        <TextView
+	            android:id="@+id/textView1"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+	            android:singleLine="false"
+	            android:text="\n概述：\n\u3000\u3000当窦房结或心房内的激动由于某些原因不能按时下传，则下一级的起搏点房室交接区，应发出房室交接区逸搏来控制心室。如果房室交接区也受到与窦房结等相同原因的影响，不能发出逸搏时，则心室起搏点即发出激动来控制心室，形成室性逸搏。连续3个或3个以上的室性逸搏，即构成室性逸搏心律，或称室性自搏心律、室性自主心律、室性自身心律等。在正常情况下室性逸搏发自束支或浦肯野纤维上，与房室交接区一样。不具备有保护性的传入阻滞特点。因此，一旦主导心律增快，则室性逸搏激动点即可被抑制。\n\n"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textColor="@color/bgColor"
+	            android:textSize="22sp" />
+
+	        <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                    android:src="@drawable/shixingyibo" />
+	        <TextView
+	            android:id="@+id/textView2"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+	            android:singleLine="false"
+	            android:text="\n预防与治疗：
+\n\n\u3000\u3000主要是针对病因治疗，因为室性逸搏及室性逸搏心律是心脏的一种生理性保护机制，故应积极治疗原发病，如急性心肌梗死、急性心肌炎等，停用洋地黄、奎尼丁，纠正高血钾、酸中毒。当发生完全或高度房室传导阻滞时，可使用阿托品静脉推注，或用异丙肾上腺素加入5%葡萄糖液500ml中静脉滴注以提高心率，药物治疗无效或出现晕厥、或阿-斯综合征时应安置体外临时起搏器或安置永久性起搏器。
+\n\n\u3000\u3000适宜食物:
+\n\u3000\u3000燕麦片，糙米，洋葱，大蒜
+\n\u3000\u3000忌吃食物:
+\n\u3000\u3000油面筋，油豆腐，油条，猪油（板油）
+\n\u3000\u3000一、饮食
+\n\u3000\u30001、蜜饯山楂(以下资料仅供参考，详细请询问医生。)
+\n\u3000\u3000配料：生山楂500克，蜂蜜250克。
+\n\u3000\u3000制作：将生山楂洗净，去果柄、果核，然后将山楂放入铝锅内，加水适量，煎煮至七成熟烂，水将干时加入蜂蜜，再用小火煮透收汁即可。冷却后，放入瓶中贮存备用。
+\n\u3000\u3000用法：每日服3次，每次15～30克。
+\n\u3000\u3000二、玉米粉粥
+\n\u3000\u3000配料：玉米粉、大米各适量。
+\n\u3000\u3000制作：将玉米粉加适量冷水调匀，待大米粥煮沸后入玉米粉同煮为粥。
+\n\u3000\u3000用法：早、晚餐温热服。
+\n\u3000\u3000三、绿豆粥
+\n\u3000\u3000配料：绿豆适量、大米100克。
+\n\u3000\u3000制作：先将绿豆洗净，用温水浸泡2小时，然后与大米同入砂锅内，加水1000毫升，煮至豆烂米开汤稠。
+\n\u3000\u3000用法：每日2～3次顿服，夏季可当冷饮经常食用。
+\n\u3000\u3000五、其他
+\n\u3000\u3000服法：每日1次，吃牛肉50克，随意食胡萝卜喝汤。
+\n\u3000\u30005、陈皮黄芪煲猪心
+\n\u3000\u3000配料：陈皮3克，党参15克，黄芪15克，猪心1个，胡萝卜100克，绍酒、食盐、油适量。
+\n\u3000\u3000制作：
+\n\u3000\u30001、把陈皮、党参、黄芪洗净，陈皮切3厘米见方的块;猪心洗净，切成3厘米见方的块。
+\n\u3000\u30002、把锅置中火上烧热，倒入油，油热时，加入猪心、胡萝卜、绍酒、盐、党参、陈皮、黄芪，加鸡汤300毫升，煮沸，再用文火煮至浓稠。
+\n\u3000\u3000服法：每日1次，佐餐食用。\n"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textColor="@color/bgColor"
+	            android:textSize="22sp" />
+
+	</LinearLayout>
+	</ScrollView>
+
+</LinearLayout>

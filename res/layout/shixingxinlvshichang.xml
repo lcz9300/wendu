@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayouttitle"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:background="#1e1d1d" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/qianlvse" >
+
+            <ImageView
+                android:id="@+id/mingci_imageview_gohome"
+                style="@style/title_right_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/back_n" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/user_sxxlsc"
+                android:textColor="#fff"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+    
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+		android:layout_height="0dp"
+	    android:layout_weight="1.63"
+	    android:background="@color/gray_white"
+	    android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+	        <TextView
+	            android:id="@+id/textView1"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+	            android:singleLine="false"
+	            android:text="\n概述：\n\u3000\u3000室性心律失常指起源于心室的心律紊乱，是常见的心律失常，包括室性早搏（室早）、室性心动过速（室速）、心室颤动（室颤）等。室速，尤其是合并器质性心脏病的室速通常是可导致室颤、猝死等严重后果的心律失常，要及时明确诊断，判断室速的原因、诱因及对预后的影响并及时处理。老年人群中室性心律失常的发生情况，就象器质性心脏病一样随年龄而增加。"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textColor="@color/bgColor"
+	            android:textSize="22sp" />
+	        
+	        <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                    android:src="@drawable/shixingxinlvshichang" />
+
+	        <TextView
+	            android:id="@+id/textView2"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+	            android:singleLine="false"
+	            android:text="\n预防与治疗：
+	            \n\n\u3000\u3000（一）一般护理　 
+\n\u3000\u30001.休息。病人心律失常发作引起心悸、胸闷、头晕等症状时应保证病人充足的休息和睡眠，休息时避免左侧卧位，以防左侧卧位时感觉到心脏搏动而加重不适。 
+\n\u3000\u30002.饮食。给予富含纤维素的食物，以防便秘；避免饱餐及摄入刺激性食物如咖啡、浓茶等。 
+\n\n\u3000\u3000（二）病情观察。连接心电监护仪，连续监测心率、心律变化，及早发现危险征兆。及时测量生命体征，测脉搏时间为一分钟，同时听心率。病人出现频发多源性室性期前收缩、RONT室性期前收缩、室性心动过速、二度II型及三度房室传导阻滞时，及时通知医生并配合处理。监测电解质变化，尤其是血钾。
+\n\n\u3000\u3000（三）抢救。配合准备抢救仪器（如除颤器、心电图机、心电监护仪、临时心脏起搏器等）及各种抗心律失常药物和其他抢救药品，做好抢救准备。 
+\n\n\u3000\u3000（四）用药。护理应用抗心律失常药物时，密切观察药物的效果及不良反应，防止毒副反应的发生。 
+\n\n\u3000\u3000（五）介入治疗的护理。向病人介绍介入治疗如心导管射频消融术或心脏起搏器安置术的目的及方法，以消除病人的紧张心理，使病人主动配合治疗。并做好介入治疗的相应护理。\n"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textColor="@color/bgColor"
+	            android:textSize="22sp" />
+	        
+
+	</LinearLayout>
+	</ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:drawable="@drawable/btn_yellow_n" android:state_enabled="true" android:state_pressed="true"/>
+ <!-- 按下时的效果 -->
+    <item android:drawable="@drawable/btn_yellow_f" android:state_enabled="true"/>
+</selector>
+
+

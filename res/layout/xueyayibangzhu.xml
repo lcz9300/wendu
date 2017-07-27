@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+         
+ <LinearLayout
+        android:id="@+id/linearLayouttitle"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:background="#1e1d1d" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/qianlvse" >
+            <ImageView
+                android:id="@+id/mingci_imageview_gohome"
+                style="@style/title_right_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/back_n" android:contentDescription="TODO"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/user_bloodpre2"
+                android:textColor="#fff"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+           
+        </RelativeLayout>
+    </LinearLayout>
+    <ScrollView
+		        android:id="@+id/scrollView1"
+		        android:scrollbars="vertical"
+		        android:layout_width="match_parent"
+				android:layout_height="0dp"
+			    android:layout_weight="1.63"
+			    android:background="@color/gray_white"
+			    android:orientation="vertical" >
+      
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:orientation="vertical" >
+	<TextView
+	                android:id="@+id/textView2"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+	                android:text="血压仪界面按钮说明：\n\u3000\u3000开始：点击开始，血压仪启动本次测量。\n\u3000\u3000保存：测量完成后，点击保存，将本次测量数据保存至历史结果中。\n\u3000\u3000帮助：点击帮助，进入血压帮助界面。\n\u3000\u3000查询：点击查询，可查询历史记录及血压曲线。\n\u3000\u3000返回：点击返回，将返回主页面。\n\n血压仪提示：\n\u3000\u3000测量完成：血压检测已经完成。\n\u3000\u3000测量错误：本次测量未成功，故障原因见下文。\n\u3000\u3000袖带异常：本次测量未成功，故障原因见下文。\n\u3000\u3000电压低：本次测量未成功，故障原因见下文。\n\n血压仪故障说明：\n\u3000\u3000①袖带异常\n\u3000\u3000②电压低\n\u3000\u3000③测量错误\n\n血压仪故障原因：\n\u3000\u3000①袖带异常：未棒臂带、臂带绑太松、太紧、臂带不匹配、气泵损坏或不匹配，气路漏气，泵阀驱动电路损坏。\n\u3000\u3000②电压低：电量低于最低工作电压。\n\u3000\u3000③测量错误：充气速度太快；或被测量者脉搏信号太微弱或未检测到足够数量的脉搏信号；或杂讯太大无法检测到有效脉搏信号；或测试结果偏离正常范围。\n\n血压仪故障解决方法：\n\u3000\u3000①袖带异常：空气管插头没有插到主机的空气接头上，请正确连接；或臂带漏气，请更换新袖带；或更换新电池；或气路其他部分漏气，请咨询售后人员。\n\u3000\u3000②电压低：更换电池，再次测量。\n\u3000\u3000③测量错误：请休息2分钟，按正确的方式佩戴臂带后再次启动测量。测量过程保持安静，不要移动和说话。\n预防与治疗：\n\u3000\u3000患者血压控制稳定且无明显合并症时，可进行稍激烈的运动，如慢跑、骑自行车等；血压控制不理想或有明显合并症时，应进行较温和的运动，如散步、打太极拳等。"
+	                android:textAppearance="?android:attr/textAppearanceMedium"
+	                android:textColor="@color/bgColor"
+	                android:textSize="22sp" />
+	           
+	              
+  					
+            	</LinearLayout>
+            </ScrollView>
+
+</LinearLayout>

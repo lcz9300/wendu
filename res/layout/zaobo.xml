@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayouttitle"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:background="#1e1d1d" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/qianlvse" >
+
+            <ImageView
+                android:id="@+id/mingci_imageview_gohome"
+                style="@style/title_right_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/back_n" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/txt_zb"
+                android:textColor="#fff"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+		android:layout_height="0dp"
+	    android:layout_weight="1.63"
+	    android:background="@color/gray_white"
+	    android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="\n概述：\n\u3000\u3000过早搏动简称早搏。是指异位起搏点发出的过早冲动引起的心脏搏动，为最常见的心律失常。可发生在窦性或异位性（如心房颤动）心律的基础上。可偶发或频发，可以不规则或规则地在每一个或每数个正常搏动后发生，形成二联律或联律性过早搏动。按起源部位可分为窦性、房性、房室交接处性和室性四种。其中以室性早搏最常见，其次是房性，结性较少见。"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/bgColor"
+                android:textSize="22sp" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_weight="0.00"
+                android:src="@drawable/zaobo" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="预防和治疗：\n\n\u3000\u30001.早搏在正常人中十分常见。如果用心电图对正常人作24小时的连续观察，可能记录到早搏的人会达到70～80％，早搏虽是心脏的不规则的跳动，但早搏并非皆由疾病造成。情绪紧张、激动、焦虑，过多地吸烟，大量地饮酒、喝浓茶，甚至便秘皆可引起早搏。但多数人并无不适的症状，或仅仅感到心荡一下，或1次跳得很重，或心脏扭动一下等感觉。频繁的早搏，大多使人感到心悸、胸闷、疲乏等不适。 所以保持健康的心态，和合理的生活习惯是预防早搏的方法。比如合理作息，少喝浓茶、酒、少吃辛辣食品，多吃蔬菜水果，保持身心愉悦等等。\n\n\u3000\u30002.许多疾病可引起早搏，如甲状腺机能亢进、贫血、低血钾、发热等非心脏疾病的病人，会发生早搏。各种心脏病当然都可引起早搏，但早搏多见于风湿性心脏病、冠状动脉硬化性心脏病、心肌炎及心肌病等心脏疾病。在有较为严重的心脏病的基础上发生频繁的早搏，甚至有可能引起心绞痛，或心力衰竭。疾病引起的早搏应该及早就医，确定原因，对症下药。\n"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/bgColor"
+                android:textSize="22sp" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

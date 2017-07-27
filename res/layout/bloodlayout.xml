@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+ <LinearLayout
+        android:id="@+id/linearLayouttitle"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:background="#1e1d1d" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/qianlvse" >
+            <ImageView
+                android:id="@+id/mingci_imageview_gohome"
+                style="@style/title_right_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/back_n" android:contentDescription="TODO"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/user_bloodpre"
+                android:textColor="#fff"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+           
+        </RelativeLayout>
+    </LinearLayout>
+    <ScrollView
+		        android:id="@+id/scrollView1"
+		        android:scrollbars="vertical"
+		        android:layout_width="match_parent"
+				android:layout_height="0dp"
+			    android:layout_weight="1.63"
+			    android:background="@color/gray_white"
+			    android:orientation="vertical" >
+      
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:orientation="vertical" >
+
+	            <TextView
+	                android:id="@+id/textView1"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+	                android:text=" \n概述：\n\u3000\u3000血压指血管内的血液对于单位面积血管壁的侧压力，即压强。由于血管分动脉、毛细血管和静脉，所以，也就有动脉血压、毛细血管压和静脉血压。通常所说的血压是指动脉血压。当血管扩张时，血压下降；血管收缩时，血压升高。 "
+	                android:textAppearance="?android:attr/textAppearanceMedium"
+	                android:textColor="@color/bgColor"
+	                android:textSize="22sp" />
+	
+	            
+	             <TextView
+	                android:id="@+id/textView2"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	               android:paddingLeft="10dp"
+                   android:paddingRight="10dp"
+	                android:text="\n血压正确测量方式：\n"
+	                android:textAppearance="?android:attr/textAppearanceMedium"
+	                android:textColor="@color/bgColor"
+	                android:textSize="22sp" />
+
+	            <ImageView
+	                android:id="@+id/imageView3"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:paddingLeft="10dp"
+	                android:paddingRight="10dp"
+	                android:src="@drawable/bloodrihet" />
+  					
+            	</LinearLayout>
+            </ScrollView>
+        
+</LinearLayout>

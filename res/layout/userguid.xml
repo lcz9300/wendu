@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:background="#E6E6FA"
+    android:orientation="vertical" >
+      <LinearLayout
+        android:id="@+id/linearLayouttitle"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+         android:background="#E6E6FA" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/qianlvse" >
+            <ImageView
+                android:id="@+id/userguid_imageview_gohome"
+                style="@style/title_right_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/back_n" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/user_guid"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+           
+        </RelativeLayout>
+    </LinearLayout>
+        <ScrollView
+        android:id="@+id/scrollView1"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+		android:layout_height="0dp"
+	    android:layout_weight="1.63"
+	    android:background="@color/gray_white"
+	    android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+             <TextView
+                android:id="@+id/textViewpre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="\n1、取下探头保护盖，打开心狗耳温计APP，点击耳温图标进入耳温测量界面，然后按下耳温枪开/关键，听到蜂鸣声(如Fig A)，耳温测量界面右上角蓝显示蓝牙已连接。"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/bgColor"
+                android:textSize="22sp" />
+
+             <ImageView
+                 android:id="@+id/imageViewpre"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                 android:paddingBottom="10dp"
+                 android:paddingLeft="30dp"
+                 android:paddingRight="30dp"
+                 android:paddingTop="10dp"
+                 android:src="@drawable/erwenqiangshuoming1" />
+
+              <TextView
+                android:id="@+id/textViewpre1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="\n2、液晶屏显示耳朵符号，“℃”开始闪烁。"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/bgColor"
+                android:textSize="22sp" />
+
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="\n3、将探头放入耳道内（尽可能深一些），再按一下“Scan/M”键，1秒钟后听见蜂鸣声，耳温枪液晶屏幕将显示此次测量温度(如Fig D)，软件界面同时也显示当前温度，并且自动保存测量值，点击软件界面下方日、周、月会显示当日测量温度曲线，以及七天和三十天内温度曲线（保存每天测量温度的最大值）。"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/bgColor"
+                android:textSize="22sp" />
+            
+               <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:paddingTop="10dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/wenduqiangshuoming2" />
+           <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="\n4、关机状态下，持续按下“Scan/M”键，后10组测量数据将会逐个显示在液晶屏幕上(如Fig E)。"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/bgColor"
+                android:textSize="22sp" />
+       <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="\n5、当环境温度超出16-35℃时，湿度大于80%RH时，液晶屏将显示Err1，此时将产品置于以上条件之外30分钟后方可使用(如Fig F)。"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/bgColor"
+                android:textSize="22sp" />         
+                  
+      <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="\n6、当耳温枪液晶屏上显示L或H时，表示测量温度超出范围。当耳温枪液晶屏上显示电池符号，表示低电压，请尽快更换电池。"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/bgColor"
+                android:textSize="22sp" />   
+           <!--      <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:paddingTop="10dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/haoren" />
+                
+                <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="测量坐姿"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_gravity="center"
+                android:textColor="@color/bgColor"
+                android:textSize="22sp" />
+                
+                <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="\n测量步骤：
+\n\u3000\u30001.按照图示连接手机和心护宝硬件；
+\n\u3000\u30002.单手持握手机，待波形稳定后点击“开始”进行测量；
+\n\u3000\u30003.测量结束后，在“趋势”页面查看数据趋势和历史数据，“医疗”页面查看所检测出的对应疾病的相关解释以及治疗方法，在“设置”页面可以进行用户密码更改。
+\n"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/bgColor"
+                android:textSize="22sp" /> -->
+  
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

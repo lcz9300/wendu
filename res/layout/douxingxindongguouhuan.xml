@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+      <LinearLayout
+        android:id="@+id/linearLayouttitle"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:background="#1e1d1d" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/qianlvse" >
+            <ImageView
+                android:id="@+id/mingci_imageview_gohome"
+                style="@style/title_right_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/back_n" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/txt_dxxdgh"
+                android:textColor="#fff"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+           
+        </RelativeLayout>
+        </LinearLayout>
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+		android:layout_height="0dp"
+	    android:layout_weight="1.63"
+	    android:background="@color/gray_white"
+	    android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+	    		android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="\n概述：\n\u3000\u3000窦性心律慢于每分钟60次称为窦性心动过缓。可见于健康的成人，尤其是运动员、老年人和睡眠时。其他原因为颅内压增高、血钾过高、甲状腺机能减退、低温以及用洋地黄、β受体阻滞剂、利血平、胍乙啶、甲基多巴等药物。在器质性心脏病中，窦性心动过缓可见。\n"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/bgColor"
+                android:textSize="22sp" />
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   	android:paddingLeft="10dp"
+                	android:paddingRight="10dp"
+                    android:src="@drawable/douxingxindongguohuan" />
+                
+                <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                	    android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="\n症状表现：\n\u3000\u30001.窦性心律过缓如心律不低于每分钟50次，一般无症状。\n\u3000\u30002.如心律低于每分钟40次时常可引起心绞痛、心功能不全或晕厥等症状。"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/bgColor"
+                android:textSize="22sp" />
+
+                <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                	    android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="\n预防与治疗： \n\u3000\u30001.窦性心动过缓心率不低于50次/分，无症状者，无需治疗。\n\u3000\u30002.如心率低于每分钟40次，且出现症状者可用提高心率药物(如阿托品、麻黄素或异丙肾上腺素)。\n\u3000\u30003.显著窦性心动过缓伴窦性停搏且出现晕厥者可考虑安装人工心脏起搏器。\n\u3000\u30004.原发病治疗。\n\u3000\u30005.对症、支持治疗。\n"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/bgColor"
+                android:textSize="22sp" />
+                
+        </LinearLayout>
+	</ScrollView>
+
+</LinearLayout>

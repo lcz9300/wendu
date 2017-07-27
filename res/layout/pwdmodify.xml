@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_white"
+    android:orientation="vertical" >
+    
+     <LinearLayout
+        android:id="@+id/linearLayouttitle"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:background="#1e1d1d"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/qianlvse" >
+            <ImageView
+                android:id="@+id/pwd_imageview_gohome"
+                style="@style/title_right_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/back_n" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/modify"
+                android:textColor="#fff"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+           
+        </RelativeLayout>
+    </LinearLayout>
+    
+<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/layout_account"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/row_height"
+            android:paddingLeft="10dp" >
+
+            <TextView
+                android:id="@+id/pwd_textView3"
+                style="@style/text_black_18"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawablePadding="10dp"
+                android:duplicateParentState="true"
+                android:gravity="center_vertical"
+                android:text="用户账户:"
+                android:textColor="@color/bgColor"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/pwd_textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="8dp"
+                android:paddingBottom="2dp"
+                android:textColor="@color/qianlvse"
+                android:textSize="25sp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+           
+            <EditText
+                android:id="@+id/et_modify1"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:drawableLeft="@drawable/ic_login_password"
+                android:hint="@string/modify_PWD1"
+                android:inputType="textPassword"
+                android:maxLength="10"
+                android:paddingBottom="10dp"
+                android:textColor="@color/qianlvse"
+                android:textSize="25sp" >
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/et_modify2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/ic_login_password"
+                android:ems="10"
+                android:hint="@string/modify_PWD2"
+                android:inputType="textPassword"
+                android:paddingBottom="10dp"
+                android:textColor="@color/qianlvse"
+                android:textSize="25sp" >
+
+            </EditText>
+            
+            
+        </LinearLayout>
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_weight="14.64" 
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/modify_PWD"
+            style="@style/tongyong"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:text="@string/modify_PWD3"
+            android:textColor="@color/light_white"
+            android:textSize="25sp" >
+			
+        </Button>
+        
+        
+    </LinearLayout>
+    </LinearLayout>
+    
+</LinearLayout>

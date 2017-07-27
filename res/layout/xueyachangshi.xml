@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+      
+ <LinearLayout
+        android:id="@+id/linearLayouttitle"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:background="#1e1d1d" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/qianlvse" >
+            <ImageView
+                android:id="@+id/mingci_imageview_gohome"
+                style="@style/title_right_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/back_n" android:contentDescription="TODO"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/user_bloodpre1"
+                android:textColor="#fff"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+           
+        </RelativeLayout>
+    </LinearLayout>
+    <ScrollView
+		        android:id="@+id/scrollView1"
+		        android:scrollbars="vertical"
+		        android:layout_width="match_parent"
+				android:layout_height="0dp"
+			    android:layout_weight="1.63"
+			    android:background="@color/gray_white"
+			    android:orientation="vertical" >
+      
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:orientation="vertical" >
+	<TextView
+	                android:id="@+id/textView2"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+	                android:text=" 血压水平分类：\n\u3000\u3000水平分类适用于男、女性，18岁以上的任何年龄的成人，将血压水平120~139/80~89mmHg定位正常高值，是根据我国流行病学调查研究数据的结果确定。血压水平120~130/80~89mmHg的人群，10年后心血管疾病风险比血压水平110/75mmHg的人群增加1倍以上；血压120~129/80~84mmHg和130~139/85~89mmHg的中年人群，10年后分别有45%和64%成为高血压患者。\n\n高血压定义为：\n\u3000\u3000在未使用降压药的情况下，非同日3次测量血压，收缩压大于等于140mmHg和舒张压大于等于90mmHg。收缩压大于等于140mmHg和舒张压小于90mmHg为单纯性收缩期高血压。患者既往有高血压史，目前正在使用降压药物，血压虽低于140/90mmHg，也诊断为高血压。\n"
+	                android:textAppearance="?android:attr/textAppearanceMedium"
+	                android:textColor="@color/bgColor"
+	                android:textSize="22sp" />
+	            <ImageView
+	                android:id="@+id/imageView1"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:paddingLeft="10dp"
+	                android:paddingRight="10dp"
+	                android:src="@drawable/bloodinfo" />
+	            
+               <ImageView
+	                android:id="@+id/imageView4"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                 android:paddingLeft="10dp"
+	                android:paddingRight="10dp"
+	                android:src="@drawable/xueyabiao" />
+	            <TextView
+	                android:id="@+id/textView2"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+	                android:text=" 预防与治疗：\n\u3000\u3000患者血压控制稳定且无明显合并症时，可进行稍激烈的运动，如慢跑、骑自行车等；血压控制不理想或有明显合并症时，应进行较温和的运动，如散步、打太极拳等。\n"
+	                android:textAppearance="?android:attr/textAppearanceMedium"
+	                android:textColor="@color/bgColor"
+	                android:textSize="22sp" />
+	           
+	              
+  					
+            	</LinearLayout>
+            </ScrollView>
+
+</LinearLayout>

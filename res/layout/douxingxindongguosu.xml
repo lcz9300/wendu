@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+      <LinearLayout
+        android:id="@+id/linearLayouttitle"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:background="#1e1d1d" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/qianlvse" >
+            <ImageView
+                android:id="@+id/mingci_imageview_gohome"
+                style="@style/title_right_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/back_n" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/txt_dxxdgs"
+                android:textColor="#fff"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+           
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+		android:layout_height="0dp"
+	    android:layout_weight="1.63"
+	    android:background="@color/gray_white"
+	    android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                	    android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="\n概述：\n\u3000\u3000在成年人当由窦房结所控制的心律其频率超过每分钟100次时称为窦性心动过速。这是最常见的一种心动过速，其发生常与交感神经兴奋及迷走神经张力降低有关。它不是一种原发性心律失常，可由多种原因引起。生理状态下可因运动、焦虑、情绪激动引起，也可发生在应用肾上腺素、异丙肾上腺素等药物之后。在发热、血容量不足、贫血、甲亢、呼吸功能不全、低氧血症、低钾血症、心衰等其他心脏疾患时极易发生。该病在控制原发病变或诱发因素后便可治愈，但易复发。"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/bgColor"
+                android:textSize="22sp" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                	    android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:src="@drawable/douxingxindongguosu" />
+            
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                	    android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="\n预防与治疗：\n\u3000\u3000窦性心动过速的治疗应主要治疗原发病，健康人运动和情绪紧张可引起心动过速。饮食如酒、茶、咖啡，药物如异丙肾上腺素和阿托品常引起窦性心动过速。在疾病状态中常见的病因是发热、低血压、缺氧、心功能不全、贫血、甲状腺机能亢进和心肌炎。\n\u3000\u3000若诊断为窦性心动过速，应前往医院查明原因，对症治疗。饮食方面减少酒、茶、咖啡摄入，清淡饮食。\n\u3000\u3000"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/bgColor"
+                android:textSize="22sp" />
+  
+            </LinearLayout>
+
+	</ScrollView>
+                            
+        
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="TextColor">#FFFFFF</color>
+    <color name="bgColor">#000000</color>
+    <color name="background">#87CEFA</color>
+    <color name="lvse">#7fd89c</color>
+     <color name="backColor">#2000</color>
+     <color name="xueya">#000000</color>
+       <!-- 内容条目按下时的样式 -->
+    <drawable name="pressed_bg">#f2f2f2</drawable>
+    <drawable name="nopressed_bg">#fff</drawable>   
+    <color name="table_background">#cbcbcb</color>   
+      <color name="white">#FFFFFF</color>
+       <!-- 程序主色调 -->
+    <color name="gray">#808080</color>
+    <color name="light_white">#fcfcfc</color>
+    <color name="tab_main_color">#1e1d1d</color>
+    <color name="globle_Color">#87CEFA</color>
+
+     <!-- 侧栏背景颜色 -->
+    <color name="transparent">#00000000</color>
+    <color name="transparent_bg">#88838B8B</color>
+    <color name="gray_white">#ebebeb</color>
+    <color name="new_bg">#4d8aa9</color>
+    <color name="qianlvse">#56cfc6</color>
+    <color name="lianglvse">#00FFFF</color>
+    
+    
+</resources>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayouttitle"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:background="#1e1d1d" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/qianlvse" >
+
+            <ImageView
+                android:id="@+id/mingci_imageview_gohome"
+                style="@style/title_right_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/back_n" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/user_sfzcdzz"
+                android:textColor="#fff"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+    
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+		android:layout_height="0dp"
+	    android:layout_weight="1.63"
+	    android:background="@color/gray_white"
+	    android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+	        <TextView
+	            android:id="@+id/textView1"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+	            android:singleLine="false"
+	            android:text="\n概述:\n\u3000\u3000双分支阻滞全称双分支传导阻滞，是指右束支、左前分支、左后分支这三支中其中两支传导阻滞。其中最常见的是右束支阻滞伴左前分支阻滞。右束支阻滞合并左前分支阻滞常见病因冠心病、急性心肌梗死等。右束支阻滞合并左后分支阻滞其病因与右束支阻滞合并左前分支阻滞相似。\n\n"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textColor="@color/bgColor"
+	            android:textSize="22sp" />
+	        
+	        <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                    android:src="@drawable/shuangfenzhichuandaozuzhi" />
+
+	        <TextView
+	            android:id="@+id/textView2"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+	            android:singleLine="false"
+	            android:text="\n治疗与预防:\n\u3000\u3000双分支传导阻滞是器质性心脏病引起的、预后严重的一类心律失常。治疗原则为：\n\u3000\u30001.针对原发病积极处理；\n\u3000\u30002.对双分支阻滞本身无特殊处理。\n\u3000\u3000主要是适时安置人工心脏起搏器。有症状的双分支传导阻滞在下列情况时需安置永久性心脏起搏器：①H-V间期＞100毫秒。②希氏束阻滞伴希氏束波分裂。③心房调搏出现希氏束远端阻滞。④静注普鲁卡因胺后出现合并左束支末端阻滞或H-V间期＞80～100毫秒。⑤H-V间期延长，反复发生晕厥，心内程序刺激未诱发出室性心动过速者。⑥外科手术引起的右束支阻滞合并左前分支阻滞。原有右束支阻滞，在急性心肌梗死后增加了其他分支传导阻滞，或新出现的右束支阻滞合并左前分支阻滞，或右束支阻滞合并左后分支阻滞，同时并发一度或二度房室传导阻滞时，应立即考虑安置临时心脏起搏器。如经临时心脏起搏器治疗3周后，传导阻滞仍未能恢复，不能脱离起搏器者，应考虑安置永久性心脏起搏器。\n"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textColor="@color/bgColor"
+	            android:textSize="22sp" />
+
+		</LinearLayout>
+	</ScrollView>
+
+</LinearLayout>

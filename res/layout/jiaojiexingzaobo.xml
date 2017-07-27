@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+      <LinearLayout
+        android:id="@+id/linearLayouttitle"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:background="#1e1d1d" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/qianlvse" >
+            <ImageView
+                android:id="@+id/mingci_imageview_gohome"
+                style="@style/title_right_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/back_n" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/txt_jxxzb"
+                android:textColor="#fff"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+           
+        </RelativeLayout>
+    </LinearLayout>
+     <ScrollView
+        android:id="@+id/scrollView1"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+		android:layout_height="0dp"
+	    android:layout_weight="1.63"
+	    android:background="@color/gray_white"
+	    android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+        
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="\n\u3000\u3000房室交接性早搏又称房室交接区过早搏动（A-V junction premature beats,JPBs），简称交接区性早搏或交接性早搏等。是指在窦性激动尚未发出之前，房室交接区提前发生的一次激动。主要表现为心悸、心慌，有间歇。如期前收缩次数过多时患者自觉心跳很乱，可出现胸闷、心前区不适、头昏、乏力等。对于无器质性心脏病且单纯房室交接性早搏者，去除诱发因素外一般不需治疗。症状十分明显者可考虑使用抗心律失常药。一般房室交界性期前收缩预后较好，不需要治疗。"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/bgColor"
+                android:textSize="22sp" />
+            
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="230dp"
+                    android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                    android:src="@drawable/jiaojiexingzaobo" />
+
+             <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="预防和治疗：\n\u3000\u3000治疗：应参考有无器质性心脏病，是否影响心排血量以及发展成为严重心律失常的可能性而决定治疗原则。\n\u3000\u3000无器质性心脏病基础的过早搏动，大多不需特殊治疗。有症状者宜解除顾虑，由紧张过度情绪激动或运动诱发的过早搏动可试用镇静剂和β-受体阻滞剂。\n\u3000\u3000频繁发作，症状明显或伴有器质性心脏病者，宜尽快找出早搏发作的病因和诱因，给予相应的病因和诱因治疗，同时正确识别其潜在致命可能，积极治疗病因和对症治疗。\n\n\u3000\u30001．出现早搏时不必过于紧张，请医生进一步检查早搏原因，评价早搏的严重程度。如果能找到早搏原因，只要将诱发早搏的原因去除，治好诱发早搏的疾病，早搏便可逐步消除。如果无法找到早搏原因，请医生决定是否需要对早搏进行治疗。绝大部分早搏的病人预后都是良好的。\n\u3000\u30002．偶发性早搏，对血液循环的影响不大，尤其是并非由其它疾病引起的，早搏本身亦非严重疾病，一般不必治疗，所以病员应消除思想顾虑，保持乐观情绪。\n\u3000\u30003．频发性早搏，尤其在心脏病基础上可能演变为严重心律紊乱，或可能导致心绞痛与心力衰竭的，应注意治疗。可以缓解早搏的药物很多，如心得安、异搏停、慢心律、乙胺碘呋酮、奎尼丁、普鲁卡因酰胺等，这些药的药性多较剧烈，应在医师的指导下服用，治疗应有耐心，不要频繁地换药，待早搏控制后，仍需用少量药物维持，以免病情反复。\n\u3000\u30004．不吸烟，不饮酒，饮食不过饱，少吃刺激性食物。注意劳逸结合，睡眠充足。活动后早搏不增多的慢性病人应适当参加文体活动。\n"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/bgColor"
+                android:textSize="22sp" />
+                </LinearLayout>
+  
+            </ScrollView>
+        
+
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+android:background="#FFFFFF"
+    android:keepScreenOn="true"
+    android:orientation="vertical" >
+
+<LinearLayout
+        android:id="@+id/linearLayouttitle"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:background="#1e1d1d">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/qianlvse" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/jiance"
+                android:textColor="#fff"
+                android:textSize="20sp" 
+                android:textStyle="bold"/>
+
+           
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:gravity="center" >
+
+  <ImageView
+      android:id="@+id/imageView1"
+      android:layout_width="fill_parent"
+      android:layout_height="match_parent"
+      android:src="@drawable/guide_ecg1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/qianlvse"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/textViewxueya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="血压"
+            android:textColor="@color/light_white"
+            android:textSize="25sp" />
+       <TextView
+            android:id="@+id/textViewxindian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:text="心电"
+            android:textColor="@color/light_white"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+</LinearLayout>

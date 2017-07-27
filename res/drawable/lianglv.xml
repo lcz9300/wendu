@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+       <!-- 填充 -->  
+    <solid android:color="#56cfc6" /> <!-- 定义填充的颜色值 -->  
+      
+    <!-- 描边 -->  
+    <stroke  
+        android:width="2dp"   
+        android:color="#90EE90" /> <!-- 定义描边的宽度和描边的颜色值 -->  
+      
+    <!-- 圆角 -->  
+    <corners  
+        android:bottomLeftRadius="20dp"  
+        android:bottomRightRadius="20dp"  
+        android:topLeftRadius="20dp"  
+        android:topRightRadius="20dp" /> <!-- 设置四个角的半径 -->  
+      
+    <!-- 间隔 -->  
+    <padding  
+        android:bottom="1dp"  
+        android:left="1dp"  
+        android:right="1dp"  
+        android:top="1dp" /> <!-- 设置各个方向的间隔 -->  
+  
+    
+
+</shape>

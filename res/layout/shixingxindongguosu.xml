@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayouttitle"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:background="#1e1d1d" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/qianlvse" >
+
+            <ImageView
+                android:id="@+id/mingci_imageview_gohome"
+                style="@style/title_right_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/back_n" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/user_sxxdgs"
+                android:textColor="#fff"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+		android:layout_height="0dp"
+	    android:layout_weight="1.63"
+	    android:background="@color/gray_white"
+	    android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+        
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="\n概述：\n\u3000\u3000室性心动过速（VT）是指发生在希氏束分叉以下的束支、心肌传导纤维、心室肌的快速性心律失常，Wellens将其定义为：频率超过100次/min，连续3个或3个以上的自发性室性电除极活动，包括单形非持续性和持续性室性心动过速以及多形室性心动过速，如果是心脏电生理检查中心脏电刺激所诱发的室性心动过速，则必须是持续6个或6个以上的快速性心室搏动（频率>100次/min）。室性心动过速可以起源于左心室及右心室，持续性发作时的频率常常超过100次/min，并可发生血流动力学状态的恶化，可能蜕变为室扑，室颤，导致心源性猝死，需要积极治疗。"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/bgColor"
+                android:textSize="22sp" />
+            
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                    android:src="@drawable/shixingxindongguosu" />
+                
+             <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="\n预防与治疗：\n\n\u3000\u3000室性心动过速大多发生在心脏病人中，可造成严重后果，增加病死率。需要采取积极治疗措施，立即终止室性心动过速的发作。其治疗原则：①室性心动过速一旦发生，应立即终止发作。②消除诱因，注意低血钾，洋地黄药物的使用。③积极治疗原发病，如纠正心衰，心梗后室壁瘤的治疗等。④预防室性心动过速的复发，在室性心动过速终止后，应使用药物或非药物措施预防室性心动过速的复发。⑤防治心脏病猝死。
+\n\n\u3000\u3000一、食疗方：(资料仅参考，具体请询问医生)
+\n\u3000\u3000痰火扰心者用粳米30g左右煮粥，兑入竹沥30-60g，稍煮即可。供早晚或或上、下午点心服食。
+\n\u3000\u3000淤血内阻者用桃仁红花羹(桃仁10g、红花10g、藕粉100g)，先煎桃仁、红花取汁200ml，加入藕粉搅拌即成;或薤白粥(薤白10-15g、粳米60g煮粥);或人参粥(用人参末3g、粳米60g煮粥);或何首乌粥(何首乌30-60g、粳米60g煮粥);或羊肉粥(新鲜羊肉90-150g、粳米500g煮粥);或百合粥(百合粉30g、粳米60g、冰糖适量)。
+\n\u3000\u3000气血两虚者使用黄芪粥(生黄芪、何首乌各30-60g、粳米200g、大枣2-3枚、陈皮末1g，红糖少许煮粥);或用人参末3g、枸杞30g、粳米200g，冰糖少许煮粥食用亦可。rym扩张型心肌病治疗网
+\n\u3000\u3000阳虚火旺者宜食用芝麻粥、荷叶粥。
+\n\u3000\u3000心阳虚脱者饮食调理是最重要的辅助治疗。可用冬虫夏草30g、精羊肉3斤，小火炖烂后服食;亦可用黄芪30g、鹿茸3g，取鸭一只(去内脏)文火炖烂，食肉喝汤即可。
+\n\u3000\u3000二、患者吃什么好？
+\n\u3000\u3000宜以富含营养高蛋白饮食为主，辅以新鲜蔬菜及时令鲜果。
+\n\u3000\u3000三、患者不适宜吃什么？
+\n\u3000\u3000忌食辛辣、生冷、肥甘，戒烟禁酒。饮食宜清淡。\n"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/bgColor"
+                android:textSize="22sp" />
+
+                </LinearLayout>
+  
+            </ScrollView>
+  
+
+</LinearLayout>

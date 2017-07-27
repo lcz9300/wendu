@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item
+		android:id="@+id/per"
+		android:icon="@android:drawable/ic_menu_search"
+		android:title="个人信息" />
+	<!-- <item
+		android:id="@+id/shebeitype"
+		android:icon="@android:drawable/ic_menu_add"
+		android:title="设备类型" /> -->
+	<item
+		android:id="@+id/buy"
+		android:icon="@android:drawable/ic_menu_add"
+		android:title="产品购买" />
+	
+	<item
+		android:id="@+id/site"
+		android:icon="@android:drawable/ic_menu_add"
+		android:title="官方网站" />
+    
+</menu>

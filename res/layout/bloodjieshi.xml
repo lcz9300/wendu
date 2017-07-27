@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+ <LinearLayout
+        android:id="@+id/linearLayouttitle"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:background="#1e1d1d" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/qianlvse" >
+            <!-- <ImageView
+                android:id="@+id/mingci_imageview_gohome1"
+                style="@style/title_right_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/back_n" android:contentDescription="TODO"/> -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/user_bloodpre3"
+                android:textColor="#fff"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+           
+        </RelativeLayout>
+    </LinearLayout>
+    <ScrollView
+		        android:id="@+id/scrollView1"
+		        android:scrollbars="vertical"
+		        android:layout_width="match_parent"
+				android:layout_height="0dp"
+			    android:layout_weight="1.63"
+			    android:background="@color/gray_white"
+			    android:orientation="vertical" >
+      
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:orientation="vertical" >
+	            <TextView
+	                android:id="@+id/textView11"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+	                android:text="\n月经周期：\n\u3000\u3000两次月经第1日的间隔时间称一个月经周期，成人月经周期平均持续28~35天。\n卵泡期：\n\u3000\u3000卵泡期由上次月经停止日开始至卵巢排卵日止。卵泡期为卵泡逐渐成熟的过程，约14~21天。\n黄体期：\n\u3000\u3000黄体期是指排卵后到月经来潮的前一天，卵巢受黄体刺激素的影响，分泌黄体素。黄体期相对固定，约14天，时间过短或体温上升过慢可能存在黄体功能异常，超过20天考虑已经怀孕。"
+	                android:textAppearance="?android:attr/textAppearanceMedium"
+	                android:textColor="@color/bgColor"
+	                android:textSize="22sp" />
+   
+         <ImageView
+	                android:id="@+id/imageView10"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:paddingLeft="10dp"
+	                android:paddingRight="10dp"
+	                android:src="@drawable/yuejingzhishi2" />	 
+	       <ImageView
+	                android:id="@+id/imageView2"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:paddingLeft="10dp"
+	                android:paddingRight="10dp"
+	                android:src="@drawable/yuejingzhishi1" />	      
+	       <TextView
+	                android:id="@+id/textView2"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+	                android:text=" \n排卵期的表现：\n\u3000\u3000食欲下降 研究表明女性在排卵期的饭量是一个月经周期中低的，专家指出这是人类的自然本能保留至今的结果——排卵期的雌性动物会将更多的注意力放在寻找异性交配上，而不是寻找食物。\n\u3000\u3000精力旺盛 这也是遗传自人类的自然本能，为了能够成功地吸引异性，排卵期的女性会变得神采奕奕，爱表现自己。\n\u3000\u3000欲望高涨 总体来说，女性在排卵期的欲望会特别旺盛，这是女性希望怀孕的身体信号达到高值的体现。\n\u3000\u3000抵抗力下降 在排卵期，女性的阴道粘液会变得稀薄，这是为了让精子能更容易地通过从而增大受孕成功的机会，与此同时，女性的鼻腔粘液也会减少，这就增加了细菌侵入人体循环系统的机会。"
+	                android:textAppearance="?android:attr/textAppearanceMedium"
+	                android:textColor="@color/bgColor"
+	                android:textSize="22sp" />     
+	            <TextView
+	                android:id="@+id/textView3"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+	                android:text=" \n测体温计算排卵期：\n\u3000\u3000排卵前后女孩的体温会发生比较明显的变化，每天测体温并建立曲线图可以比较排卵前后体温变化趋势。根据体温的变化来确定排卵期的话，一般来说，正常情况下，年轻女性在排卵期前期体温较低，排卵期后体温较高。排卵期体温变化图可以反映出黄功能的情况。由于每个人的激素水平不同，排卵期体温图可以出现双相型或单相型的体温变化。其中，排卵期体温的高温期持续时间，上升或下降的幅度等都是重要的参考指标。 "
+	                android:textAppearance="?android:attr/textAppearanceMedium"
+	                android:textColor="@color/bgColor"
+	                android:textSize="22sp" />
+	
+	            <ImageView
+	                android:id="@+id/imageView3"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:paddingLeft="10dp"
+	                android:paddingRight="10dp"
+	                android:src="@drawable/pailuanwendu" />
+	            <ImageView
+	                android:id="@+id/imageView4"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:paddingLeft="10dp"
+	                android:paddingRight="10dp"
+	                android:src="@drawable/pailuan2" />
+	    <TextView
+	                android:id="@+id/textView4"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	               android:paddingLeft="10dp"
+                   android:paddingRight="10dp"
+	                android:text="\n排卵期体温图1：正常排卵，低温期与高温期明显。\n\u3000\u3000在没有怀孕的正常周期中，首先是低温期，排卵后受黄体分泌的孕酮（黄体激素）影响，温度升高。正常的14天左右黄体期后，黄体萎缩停止分泌孕酮（黄体激素），孕酮减少到一定量以下后不再影响体温调节中枢，体温恢复到低温期。同时月经来潮。"
+	                android:textAppearance="?android:attr/textAppearanceMedium"
+	                android:textColor="@color/bgColor"
+	                android:textSize="22sp" />        
+	                 <ImageView
+	                android:id="@+id/imageView5"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:paddingLeft="10dp"
+	                android:paddingRight="10dp"
+	                android:src="@drawable/zhengchangpailuan" />    
+	                	    <TextView
+	                android:id="@+id/textView5"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	               android:paddingLeft="10dp"
+                   android:paddingRight="10dp"
+	                android:text="\n排卵期体温图2：无排卵，持续低温。\n\u3000\u3000若卵巢功能不良，没有排卵也没有黄体形成，也就没有孕酮（黄体激素）影响体温调节中枢，基础体温不会升高，体温将持续低温。"
+	                android:textAppearance="?android:attr/textAppearanceMedium"
+	                android:textColor="@color/bgColor"
+	                android:textSize="22sp" />        
+	                 <ImageView
+	                android:id="@+id/imageView6"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:paddingLeft="10dp"
+	                android:paddingRight="10dp"
+	                android:src="@drawable/yichangpailuan" />  
+	                  	    <TextView
+	                android:id="@+id/textView6"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	               android:paddingLeft="10dp"
+                   android:paddingRight="10dp"
+	                android:text="\n排卵期体温图3：黄体素浓度不够，体温上升过慢。\n\u3000\u3000如果女性的基础体温上升缓慢的话，并且超过三天还没有达到36.9度以上的话，这个状况属于”爬坡式”的基础体温，也是由于女性黄体功能产生的缓慢和不足的表现。"
+	                android:textAppearance="?android:attr/textAppearanceMedium"
+	                android:textColor="@color/bgColor"
+	                android:textSize="22sp" />        
+	                 <ImageView
+	                android:id="@+id/imageView7"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:paddingLeft="10dp"
+	                android:paddingRight="10dp"
+	                android:src="@drawable/huangtisubuzu" />   
+	               	    <TextView
+	                android:id="@+id/textView7"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	               android:paddingLeft="10dp"
+                   android:paddingRight="10dp"
+	                android:text="\n排卵期体温图4：黄体功能不良，体温缓慢下降。\n\u3000\u3000如果基础体温高温不足12天的话，就似乎是女性的黄体功能维持的时间不足，这往往是黄体功能低下的表现之一。"
+	                android:textAppearance="?android:attr/textAppearanceMedium"
+	                android:textColor="@color/bgColor"
+	                android:textSize="22sp" />        
+	                 <ImageView
+	                android:id="@+id/imageView8"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:paddingLeft="10dp"
+	                android:paddingRight="10dp"
+	                android:src="@drawable/huangtibuliang" />  
+	            	    <TextView
+	                android:id="@+id/textView8"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	               android:paddingLeft="10dp"
+                   android:paddingRight="10dp"
+	                android:text="\n排卵期体温图5：黄体不足，高温持续时间不足。\n\u3000\u3000如果基础体温在高温期间体温高低不平的话，而且悬殊比较大，这种情况就是“马鞍式”体温，也是黄体功能不足的表现。"
+	                android:textAppearance="?android:attr/textAppearanceMedium"
+	                android:textColor="@color/bgColor"
+	                android:textSize="22sp" />        
+	                 <ImageView
+	                android:id="@+id/imageView9"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:paddingLeft="10dp"
+	                android:paddingRight="10dp"
+	                android:src="@drawable/huangtibuzu" />                                  
+	            <TextView
+	                android:id="@+id/textView9"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	               android:paddingLeft="10dp"
+                   android:paddingRight="10dp"
+	                android:text="\n排卵期体温是多少？\n\u3000\u3000一般是在36.6度到37度之间。女性的基础体温一般会随着排卵期而有所变化：在月经周期的前半期，体温的波动是在36.6度以下的，到了排卵后就会转入月经周期的后半期，正常情况体温比前半期还要高一些，正常的波动在36.6度-37度之间。如果体温上升说明已排卵，大约持续两周的高温期后，体温就会再度降低，然后就会到经期。如果怀孕了，基础体温就不会再下降。"
+	                android:textAppearance="?android:attr/textAppearanceMedium"
+	                android:textColor="@color/bgColor"
+	                android:textSize="22sp" />
+       <TextView
+	                android:id="@+id/textView10"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	               android:paddingLeft="10dp"
+                   android:paddingRight="10dp"
+	                android:text="\n排卵期体温有什么变化？\n\u3000\u3000排卵期体温呈高低两相变化，排卵的时候体温会升高。\n\u3000\u3000当人体处于完全休息状态，排除精神及一切客观因素干扰时，测出的体温称基础体温。以早晨6-7点醒来尚未起床活动时测得体温最准确，基础体温可以比较准确地反映卵巢的排卵功能和相应的内分泌水平。\n\u3000\u3000排卵前为卵泡期，卵巢分泌的为雌激素，基础体温大多被动在36.6℃以下。排卵后卵巢内形成黄体，黄体分泌孕激素。孕激素对中枢神经系统有致热升温作用，使基础体温升高0.3-0.5℃，体温的升高一直持续到月经来潮前1-2天开始下降。这样在一个有排卵的月经周期中基础体温的变化呈现双相型的曲线。在低温向高温过渡的时候，会出现一个极低温，出现极低温的这一天就是排卵日。"
+	                android:textAppearance="?android:attr/textAppearanceMedium"
+	                android:textColor="@color/bgColor"
+	                android:textSize="22sp" />
+  					
+            	</LinearLayout>
+            </ScrollView>
+        
+</LinearLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_CONTENT"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/TextColor"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:id="@+id/linearLayouttitle"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:background="#1e1d1d"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:background="@color/qianlvse" >
+            
+             <ImageView
+                android:id="@+id/tiaokuan_imageview_gohome"
+                style="@style/title_right_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/back_n" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/mianze"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="20sp" />
+
+           
+        </RelativeLayout>
+</LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+		android:layout_height="0dp"
+	    android:layout_weight="1.63"
+	    android:background="@color/gray_white"
+	    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0" >
+        
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="top"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:duplicateParentState="true"
+                android:text="\n1、\u3000用户安装本产品软件即表示同意本产品所有条款，如不接受本条款，请立即取消或者卸载本产品；
+                \n2、\u3000本产品经过标准化的生产流程和严格的测试。并不承诺与所有手机兼容，如出现错误，可与公司技术联系；
+                \n3、\u3000使用本产品所产生的风险须有用户自行承担，在法律允许范围内，对因使用或不能使用本产品所产生的风险及损害，包括但不限于之间或间接的个人损害，商业盈利的损失，贸易中断，商业信息的丢失或其他经济损失，我们不承担任何责任；
+                \n4、\u3000本产品所提供所有功能和信息只具有保健指导作用，并不能替代正对医疗机构检查，不具有医疗诊断作用。对于使用本硬件和软件产品所产品的一切损害，我们不承担任何责任；
+                \n5、\u3000我们拥有硬件和软件最终解释权。对有可能产生的误报，错误检测结果所产生的损失不承担任何责任。
+                \n\n"
+                android:textColor="@color/bgColor"
+                android:textSize="20dp"
+                android:textStyle="normal"
+                android:typeface="serif" />
+           
+
+        </LinearLayout>
+        
+        
+
+
+
+    </FrameLayout>
+</ScrollView>
+</LinearLayout>
+

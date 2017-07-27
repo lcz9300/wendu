@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+      <LinearLayout
+        android:id="@+id/linearLayouttitle"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:background="#1e1d1d" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/qianlvse" >
+            <ImageView
+                android:id="@+id/mingci_imageview_gohome"
+                style="@style/title_right_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/back_n" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/txt_fxzb"
+                android:textColor="#fff"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+           
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+		android:layout_height="0dp"
+	    android:layout_weight="1.63"
+	    android:background="@color/gray_white"
+	    android:orientation="vertical" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="\n概述\n\u3000\u3000房性早搏，即房性期前收缩，起源于窦房结以外心房的任何部位。正常人进行24小时心电检测，约60%的人有房性期前收缩发生。各种器质性心脏病患者均可发生房性期前收缩，并经常是快速性房性心律失常出现的先兆。主要症状为心悸、心脏“停跳”感，期前收缩次数过多时自觉“心跳很乱”，可有胸闷、心前区不适、头昏、乏力、脉搏有间歇等。也有无症状者。可能因期前收缩持续时间较久，患者已适应。此外，期前收缩的症状与患者的精神状态有密切关系，不少患者的很多症状是由于对期前收缩不正确的理解和恐惧、焦虑等情绪所致。\n\n"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/bgColor"
+                android:textSize="22sp" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:src="@drawable/fangxingzaobo" />
+            
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="预防与治疗：\n\u3000\u3000频发房性早搏，见于二尖瓣病变，甲状腺功能亢进或冠心病，尤其是多源性的，可能是心房颤动的前奏。引起早搏的原因有很多，有一些健康人的心脏也可能发生早搏，而在病态心脏更易发生。早搏是很常见的，任何人在一生中都难免不发生。一般来说，年龄愈小愈罕见，年龄愈大愈多见。其最高发生率介于50—70岁之间。5%左右的健康人可发生过早搏动。发生了早搏，可使心搏出量减少。但是，每分钟少于6次的早搏，对身体健康几乎无影响（生理性）。健康人发生早搏往往有一些人为的诱因，如情绪激动、饱餐、过劳、上呼吸道感染、胆道系统的疾病、电解质紊乱、药物作用等。\n\n\u3000\u3000治疗室性早搏的主要目的是预防室性心动过速，心室颤动和心性猝死。\n\u3000\u3000无心脏病的病人，室早并不增加其死亡率　对无症状的孤立的室早，无论其形态和频率如何，无需药物治疗。\n\u3000\u3000对伴发于器质性心脏病的室早，应对其原发病进行治疗。\n"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/bgColor"
+                android:textSize="22sp" />
+
+        </LinearLayout>
+  
+     </ScrollView>
+        
+
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayouttitle"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:background="#1e1d1d" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/qianlvse" >
+
+            <ImageView
+                android:id="@+id/mingci_imageview_gohome"
+                style="@style/title_right_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/back_n" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/user_scszcdzz"
+                android:textColor="#fff"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+    
+ <ScrollView
+        android:id="@+id/scrollView1"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+		android:layout_height="0dp"
+	    android:layout_weight="1.63"
+	    android:background="@color/gray_white"
+	    android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+	        <TextView
+	            android:id="@+id/textView1"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+	            android:singleLine="false"
+	            android:text="\n概述：\n\u3000\u3000双侧束支传导阻滞 ，简称双束支阻滞，是指左、右束支主干同时发生阻滞，左或右束支阻滞程度可呈一、二、三度阻滞。当左、右束支阻滞均呈三度时则称完全性双束支阻滞，其图形与三度房室传导阻滞相似，左右束支也可同时一度、二度阻滞，也可各自出现不同程度的阻滞，使双束支阻滞的心电图表现复杂，称为不完全性双束支阻滞。其确切诊断仍需作希氏束电图定位。\n\u3000\u3000如束支阻滞程度较轻时，其本身无明显症状；当阻滞程度重可出现心律不齐，当发生三度房室传导阻滞时心室率可很慢，容易发生心悸、胸闷、头晕、晕厥、阿-斯综合征等。\n"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textColor="@color/bgColor"
+	            android:textSize="22sp" />
+	        <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="230dp"
+                    android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                    android:src="@drawable/shuangceshuzhichuandaozuzhi" />
+	        <TextView
+	            android:id="@+id/textView2"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+	            android:singleLine="false"
+	            android:text="\n预防和治疗：\n\u3000\u30001.积极治疗原发病，及时控制、消除原因和诱因是预防发生本病的关键。\n\u3000\u30002.如对药物反应差，需安置人工心脏起搏器，以防心脑综合征的发生。\n\u3000\u30003.饮食有节，起居有常，情志舒畅劳逸有度，适当地参加体育锻炼，以增强体质。\n"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textColor="@color/bgColor"
+	            android:textSize="22sp" />
+
+
+		</LinearLayout>
+	</ScrollView>
+
+</LinearLayout>

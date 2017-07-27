@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayouttitle"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:background="#1e1d1d" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/qianlvse" >
+
+            <ImageView
+                android:id="@+id/mingci_imageview_gohome"
+                style="@style/title_right_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/back_n" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/user_fxyb"
+                android:textColor="#fff"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+    
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+		android:layout_height="0dp"
+	    android:layout_weight="1.63"
+	    android:background="@color/gray_white"
+	    android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+	        <TextView
+	            android:id="@+id/textView1"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+	            android:singleLine="false"
+	            android:text="\n概述：\n\u3000\u3000当窦性冲动传导受到抑制(如窦性心动过缓、窦房传导阻滞、窦性停搏时)房性潜在起搏点的自律性高于窦性起搏点或窦性冲动未能传出，则房性起搏点便可控制心房，产生房性逸搏(atrial escape)。当窦房结受抑制的因素消失，则又可出现窦性心律，房性逸搏消失。所以房性逸搏是一种生理性代偿机制。连续3个或3个以上的房性逸搏即构成房性逸搏心律。\n"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textColor="@color/bgColor"
+	            android:textSize="22sp" />
+	        
+	        <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/fangxingyibo" />
+
+	        <TextView
+	            android:id="@+id/textView2"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+	            android:singleLine="false"
+	            android:text="\n预防与治疗：\n\u3000\u3000房性逸搏及房性逸搏心律是一种生理性代偿机制，当其出现时要积极寻找引起房性逸搏及房性逸搏心律的原发疾病，查明病因，积极治疗其原发病因，是预防此种心律失常的根本措施。
+\n\u3000\u3000房性逸搏和房性逸搏心律的食疗(以下资料仅供参考，详细需咨询医生)
+\n\u3000\u30001. 酸枣仁粥： 酸枣仁20克(炒黄研末)，粳米100克，加水煮成粥，空腹食之。
+\n\u3000\u30002. 圆肉糯米粥： 圆肉20克，糯米60克，白糖适量加水煮粥，空腹食之。
+\n\u3000\u30003. 莲子百合煨猪肉： 莲子50克， 鲜百合60克，瘦猪肉150克，同放入锅内加水，再加入葱、姜、盐、米酒、味精适量作调料。先武火烧沸，再用文火煨炖1小时即可，食莲子、百合、猪肉并饮汤。每日1--2次。
+\n\u3000\u30004. 黄芪黄鳝猪肉汤： 黄芪30克， 黄鳝2条，瘦猪肉60克。黄鳝去内脏，切段，同瘦猪肉、黄芪加水共煮熟去黄芪后食用。
+\n\u3000\u30005. 鳖肉枸杞汤： 鳖1只(约500克)，枸杞30克，女贞子25克，莲子15克。将鳖宰杀，去内脏、头，加上述中药共煮熟，去药渣吃鳖肉饮汤。
+\n\u3000\u30006. 猪脑炖枸杞： 猪脑1具，淮山30克，枸杞20克。将淮山、枸杞用纱布包扎好，与猪脑加水共炖，将熟时下少许盐或调料食之。
+\n\u3000\u30007. 白鸽参芪汤： 白鸽1只，北芪30克，党参30克。将白鸽去毛及内脏，洗净，同北芪、党参一起放锅内煮汤，吃鸽肉饮汤。
+\n\u3000\u30008. 大枣炖猪心： 猪心100克， 大枣25克，同置碗内加水，文火炖2小时后调味食用。
+\n\u3000\u30009. 羊肉枸杞汤： 羊肉60克，枸杞30克，黑豆30克，淮山药20克，红糖25克，水煎熟，喝汤吃羊肉。每日1次。
+\n\u3000\u300010. 米酒核桃汤： 米酒50毫升，核桃仁6个，白糖30克。将核桃仁与白糖共捣为泥，放入锅中，下米酒调匀，以文火煎煮10分钟即可，每日1―2次。
+\n\u3000\u300011. 熟附羊肉麻雀汤： 羊肉300克切块洗净，麻雀2只(去毛及内脏)洗净，熟附子15克，生姜3片，一齐放入锅内，加清水适量，武火煮沸后，文火煲2小时，调味食用。
+\n\u3000\u300012. 参茸炖鸡肉： 鸡肉100克，高丽参(高丽参食品)6克，鹿茸(鹿茸食品)3克，一齐放入炖盅内，加开水适量，炖盅加盖，文火隔水炖3小时，调味供食。
+\n\n\u3000\u3000房性逸搏和房性逸搏心律患者吃什么对身体好?
+\n\u3000\u30001、应多吃维生素丰富的新鲜蔬菜和水果。如萝卜、山楂、蘑菇等。
+\n\u3000\u30002、宜食清淡。
+\n\u3000\u30003、宜多吃纤维类食物。
+\n\n\u3000\u3000房性逸搏和房性逸搏心律患者吃什么对身体不好?
+\n\u3000\u30001、忌食有刺激神经兴奋的食物，比如辛辣食物.咖啡和可乐等。
+\n\u3000\u30002、忌食肥腻的食物。
+\n\u3000\u30003、忌烟酒。
+\n\u3000\u30004、少吃甜食。\n"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textColor="@color/bgColor"
+	            android:textSize="22sp" />
+
+	</LinearLayout>
+	</ScrollView>
+
+</LinearLayout>

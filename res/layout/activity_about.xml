@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_CONTENT"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/TextColor"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:id="@+id/linearLayouttitle"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:background="#1e1d1d"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:background="@color/qianlvse" >
+            
+             <ImageView
+                android:id="@+id/about_imageview_gohome"
+                style="@style/title_right_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/back_n" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/guanyu"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="20sp" />
+
+           
+        </RelativeLayout>
+</LinearLayout>
+
+    <TextView
+        android:id="@+id/text_app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="18dp"
+        android:layout_marginTop="18dp"
+        android:drawablePadding="12dp"
+        android:drawableTop="@drawable/ic_launcher"
+        android:textColor="@color/gray"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="top"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:duplicateParentState="true"
+                android:text="\u3000\u3000心狗妇温宝,是一款专门为备孕妇女设计的便携式耳温测量智能产品。通过手机APP，可以准确测体温并建立日、周、月、季体温曲线图，通过曲线图比较排卵前后体温变化趋势，有助于女性判断易孕期。
+                \n\n\u3000\u3000热线电话：400-775-2629"
+                android:textColor="@color/bgColor"
+                android:textSize="20dp"
+                android:textStyle="normal"
+                android:typeface="serif" />
+           
+
+        </LinearLayout>
+        
+        
+
+
+
+    </FrameLayout>
+
+</LinearLayout>
+

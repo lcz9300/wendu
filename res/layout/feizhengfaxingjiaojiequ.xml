@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayouttitle"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:background="#1e1d1d" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/qianlvse" >
+
+            <ImageView
+                android:id="@+id/mingci_imageview_gohome"
+                style="@style/title_right_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/back_n" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/user_fzfxxjjqxdgs"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+    
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+		android:layout_height="0dp"
+	    android:layout_weight="1.63"
+	    android:background="@color/gray_white"
+	    android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+	        <TextView
+	            android:id="@+id/textView1"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+	            android:singleLine="false"
+	            android:text="\n概述：\n\u3000\u3000非阵发性房室交界区性心动过速(nonparoxysmal atrioventricular junctional tachycardia)的发生机制与房室交界区组织自律性增高或触发活动有关。最常见的病因为洋地黄中毒。其他为下壁心肌梗死、心肌炎、急性风湿热或心瓣膜手术后，亦偶见于正常人。\n\u3000\u3000心动过速发作起始与终止时心率逐渐变化，有别于阵发性心动过速，故称为“非阵发性”。心率70～150次/分或更快，心律通常规则。QRS波群正常。自主神经系统张力变化可影响心率快慢。如心房活动由窦房结或异位心房起搏点控制，可发生房室分离(图3—3-15)。洋地黄过量引起者，经常合并房室交界区文氏型传导阻滞，使心室律变得不规则。"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textColor="@color/bgColor"
+	            android:textSize="22sp" />
+
+	        <TextView
+	            android:id="@+id/textView2"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+	            android:singleLine="false"
+	            android:text="\n预防与治疗：\n\u3000\u3000治疗主要针对基本病因。已用洋地黄者应立即停用，亦不应施行电复律。洋地黄中毒引起者，可给予钾盐、利多卡因、苯妥英钠或普萘洛尔治疗。其他患者可选用IA、IC与Ⅲ类（胺碘酮）药物。本型心律失常能自行消失，假如患者耐受性良好，仅需密切观察和治疗原发疾病。\n"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textColor="@color/bgColor"
+	            android:textSize="22sp" />
+	        
+	</LinearLayout>
+	</ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayouttitle"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:background="#1e1d1d" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/qianlvse" >
+
+            <ImageView
+                android:id="@+id/mingci_imageview_gohome"
+                style="@style/title_right_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/back_n" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/user_xspd"
+                android:textColor="#fff"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+    
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+		android:layout_height="0dp"
+	    android:layout_weight="1.63"
+	    android:background="@color/gray_white"
+	    android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+	        <TextView
+	            android:id="@+id/textView1"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+	            android:singleLine="false"
+	            android:text="\n概述：\n\u3000\u3000心室扑动持续的时间常很短，很快转为心室颤动，故心室扑动是心室颤动的前驱。心室扑动是室性心动过速和心室颤动之间的过渡型，也可与心室颤动先后或掺杂
+\n\u3000\u3000心室扑动和心室颤动的症状体征
+\n\u3000\u3000心室扑动及心室颤动可为持久性或阵发性的，在短时间内反复发作，持续几秒钟至1～2min或更长。
+\n\u3000\u3000心室颤动时心室已无有效的收缩，心排血量极少或无排血，可迅速发生脑缺血，表现为阿-斯综合征，患者突然抽搐，常为全身的抽搐，持续时间长短不一，可达数分钟，多发生在心室颤动后10s内，意识丧失，昏迷常发生在心室颤动30s后，随几次缓慢的叹息状呼吸后，呼吸逐渐变浅而停止，此常发生在心室颤动后20～30s内，面色由苍白变暗紫，心音，脉搏，血压均消失，瞳孔散大多在心室颤动30～60s出现。
+\n\u3000\u3000根据患者的临床表现和心电图，可明确诊断，心室扑动和颤动是快速导致患者死亡的心律失常，而且极少能自行中止，因此应尽快做出诊断，使患者能得到及时的救治。\n"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textColor="@color/bgColor"
+	            android:textSize="22sp" />
+	        <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                    android:src="@drawable/xinshipudong" />
+	        <TextView
+	            android:id="@+id/textView2"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+	            android:singleLine="false"
+	            android:text="\n预防与治疗：
+	            \n\u3000\u30001.直流电复律和除颤为治疗室扑和室颤的首选措施，应争取在短时间内（1～2分钟）给予非同步直流电除颤，一般用300～400Ws电击若无效可静脉或气管注入、心内注射肾上腺素或托西溴苄铵（溴苄胺）或利多卡因，再行电击，可提高成功率。若在发病后4分钟内除颤，成功率50%以上，4分钟以后仅有4%。若身边无除颤器应首先作心前区捶击2～3下，捶击心脏不复跳，立即进行胸外心脏按压，70～80次/min。
+\n\u3000\u30002.药物除颤，利多卡因静脉注射或普鲁卡因胺。若是洋地黄中毒引起室颤，应用苯妥英钠静脉注射。
+\n\u3000\u30003.经上述治疗恢复自主心律者，可持续静脉滴注利多卡因或普鲁卡因胺维持。此外，托西溴苄铵（溴苄胺）、索他洛尔、胺碘酮静脉滴注，也有预防室颤良好疗效。洋地黄中毒者可给苯妥英钠。
+\n\u3000\u30004.在坚持上述治疗的同时要注意保持气道通畅，坚持人工呼吸，提供充分氧气。
+\n\u3000\u30005.在抢救治疗的同时，还应注意纠正酸碱平衡失调和电解质紊乱。因为室扑、室颤持续时间稍长，体内即出现酸中毒，不利于除颤。此时可给11.2%乳酸钠或4%～5%碳酸氢钠静脉滴注。
+\n\u3000\u30006.若条件允许亦可插入临时起搏导管进行右室起搏。\n"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textColor="@color/bgColor"
+	            android:textSize="22sp" />
+
+
+	</LinearLayout>
+	</ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayouttitle"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:background="#1e1d1d" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/qianlvse" >
+
+            <ImageView
+                android:id="@+id/mingci_imageview_gohome"
+                style="@style/title_right_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/back_n" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/user_xfpd"
+                android:textColor="#fff"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+		android:layout_height="0dp"
+	    android:layout_weight="1.63"
+	    android:background="@color/gray_white"
+	    android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+        
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="\n概述：\n\u3000\u3000心房扑动可以认为是在房性心动过速与心房颤动之间的中间型。当心房异位起搏点频率达到250～350次/分钟且呈规则时，引起心房快而协调的收缩称为心房扑动。患者可出现低血压、头晕、心悸、心绞痛，甚至心源性休克。\n\u3000\u3000多为器质性心脏病，常见于冠心病、高血压、肺心病、肺栓塞、病态窦房结等。"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/bgColor"
+                android:textSize="22sp" />
+            
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                    android:src="@drawable/xinfangpudong" />
+                
+                <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="\n预防与治疗：\n\u3000\u3000心房扑动的治疗主要分为两方面：
+\n\u3000\u30001.病因治疗 由于心房扑动大多系器质性心脏病所致。因此，治疗原发病很重要。有时当原发病未能纠正，心房扑动虽用药物控制但很易反复发作。
+\n\u3000\u30002.对心房扑动的治疗 心房扑动时心室率常增快，尤以活动时更明显，这对原发病患者影响较大。故原则上除了对极短阵发作的心房扑动且无器质性心脏病依据的患者可以观察外，对其他患者均应及时纠正，使心房扑动转为窦性心律，即使变成心房颤动也比心房扑动要好，最起码也应将其心室率下降。阵发性或持续性心房扑动的治疗目的有以下几个方面：
+\n\u3000\u3000①终止发作：A.直流电转复;B.食管心房调搏术;C.抗心律失常药：胺碘酮、普罗帕酮(心律平)等。
+\n\u3000\u3000②维持治疗：当药物或电转复为窦性心律时，需服胺碘酮、普罗帕酮(心律平)等药物以维持疗效。
+\n\u3000\u3000③采用导管射频消融术或外科手术可达根治目的。
+\n\u3000\u3000心房扑动食疗：
+\n\u3000\u3000应避免一切含有辛辣刺激性的食物，如酸辣过冷， 过烫、 葱蒜、 豆类等胀气食物，以及粗粮和富含渣滓的食物等。凡是能促使胃酸分泌较多的肉汤、鸡汤等鲜汤、浓茶均不宜饮用。 采取少吃多餐方式以中和胃酸，并减少胃部的过重负担。老年人心房扑动吃哪些食物对身体好：宜清淡为主，多吃蔬果，合理搭配膳食，注意营养充足。\n"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/bgColor"
+                android:textSize="22sp" />
+            
+
+                </LinearLayout>
+  
+            </ScrollView>
+    
+
+</LinearLayout>

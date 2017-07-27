@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+      <LinearLayout
+        android:id="@+id/linearLayouttitle"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:background="#1e1d1d" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/qianlvse" >
+            <ImageView
+                android:id="@+id/mingci_imageview_gohome"
+                style="@style/title_right_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/back_n" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/txt_dxtb"
+                android:textColor="#fff"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+           
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+		android:layout_height="0dp"
+	    android:layout_weight="1.63"
+	    android:background="@color/gray_white"
+	    android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+        
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="\n概述：\n\u3000\u3000窦性停搏又称窦性静止、窦性间歇、窦性暂停等。窦性停搏是指窦房结在一个或多个心动周期中不产生冲动，以致不能激动心房或整个心脏，又称为窦性静止。青年人多由于强烈的迷走神经反射所致，常见于咽部受刺激、气管插管、按压颈动脉窦或眼球、应用洋地黄、硫酸奎尼丁等药物。有时炎症、缺血、损伤、退行性变等各种因素，损伤了窦房结的自律细胞，造成窦性停搏。\n\n\u3000\u3000频发的窦性停搏是一种严重的心律失常，是窦房结功能衰竭的表现，必须查清病因给予治疗，常需安装人工心脏起搏器。"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/bgColor"
+                android:textSize="22sp" />
+            
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                    android:src="@drawable/douxingtingbo" />
+                <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="\n预防和治疗：\n\u3000\u30001.窦性停搏的治疗主要是针对病因治疗。\n\u3000\u30002.对于偶发的、一过性的窦性停搏（尤其是迷走神经张力增高所致）又无症状者，心率在50次/min以上的常不需做对症治疗。\n\u3000\u30003.对于频发、持续时间长的窦性停搏，有头昏或晕厥发作等明显症状者，需要去医院接受专业治疗。\n\u3000\u30004.对有反复晕厥、阿-斯综合征发作且药物治疗无效者，应考虑安置人工心脏起搏器。如无条件，可先行体外静脉临时心脏起搏紧急处理，再送至有条件医院安置人工心脏起搏器。\n\u3000\u30005.对持久性或永久性窦性停搏者，应及早安置人工心脏起搏器。\n"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/bgColor"
+                android:textSize="22sp" />
+
+                </LinearLayout>
+  
+            </ScrollView>
+        
+
+</LinearLayout>

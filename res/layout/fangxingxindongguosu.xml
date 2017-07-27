@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayouttitle"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:background="#1e1d1d" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/qianlvse" >
+
+            <ImageView
+                android:id="@+id/mingci_imageview_gohome"
+                style="@style/title_right_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/back_n" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/user_fxxdgs"
+                android:textColor="#fff"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+    
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+		android:layout_height="0dp"
+	    android:layout_weight="1.63"
+	    android:background="@color/gray_white"
+	    android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+	        <TextView
+	            android:id="@+id/textView1"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+				android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+	            android:text="\n概述:\n\u3000\u3000房性心动过速简称房速。根据发生机制与心电图表现的不同，可分为自律性房性心动过速、折返性房性心动过速与混乱性房性心动过速三种。可使用心电图进行检查，并根据检查结果进行诊断和药物治疗。"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textColor="@color/bgColor"
+	            android:textSize="22sp" />
+	        
+	        <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                    android:src="@drawable/fangxingxindongguosu" />
+
+	        <TextView
+	            android:id="@+id/textView2"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+	            android:singleLine="false"
+	            android:text="\n预防与治疗:\n\u3000\u3000在病因治疗和消除诱因的基础上，对房速发作频繁的患者，可选择Ia类、Ic类、III类或IV类抗心律失常药物口服治疗，以预防房速复发。长期口服抗心律失常药物有可能导致心律失常，故应该慎重应用。单源性房速频繁发作或持续无休止发作者，射频消融可作为一线治疗，达到根治房速目的。
+\n\u3000\u3000房性心动过速的饮食保健方法：
+\n\u3000\u30001、坚果类：杏仁、花生等坚果富含对心脏有益的氨基酸和不饱和脂肪酸，能降低患心脏病的风险。
+\n\u3000\u30002、薏苡仁：属于水溶性纤维的薏苡仁，可以加速肝排除胆固醇，保护心脏健康。
+\n\u3000\u30003、黑芝麻：黑芝麻含有不饱和脂肪酸和卵磷脂，能维持血管弹性，预防动脉硬化。
+\n\u3000\u30004、黄豆：黄豆含有多种人体必需的氨基酸，且多为不饱和脂肪酸，可促进体内脂肪和胆固醇代谢。
+\n\u3000\u30005、玉米：玉米油含不饱和脂肪酸、高达六成的亚麻油酸，是良好的胆固醇吸收剂;玉米放在中药里则有利尿作用，并有帮助稳定血压的效果。
+\n\u3000\u30006、马铃薯：该食品含有较多的维生素c和钠、钾、铁等，尤其钾含量最为丰富，每100克中含钾502毫克，是少有的高钾蔬菜。心脏病特别是心功能不全的患者，多伴有低钾倾向。常吃马铃薯，既可补钾，又可补糖、蛋白质及矿物质、维生素等。
+\n\u3000\u30007、菠菜：本品丰富的叶酸，能有效预防心血管疾病。此外，菠菜中的铁以及微量元素，还可起到补血之作用。
+\n\u3000\u30008、芹菜：芹菜所含的芹菜碱，可以保护心血管功能。吃芹菜要吃叶子，因为叶子才是营养精华所在。叶子的维生素c比茎高，且富含植物性营养素、营养价值高。芹菜也是富含纤维素的食物。最新研究结果显示，多吃富含纤维素的食物能够降低心脏病发作的危险性。
+\n\u3000\u30009、木耳：食用木耳能刺激肠胃蠕动，加速胆固醇排出体外。此外，黑木耳中含抗血小板凝结物质，对于动脉硬化、冠心病及阻塞性中风有较好的保健效果。
+\n\u3000\u3000温馨提示：房性心动过速患者应避免过度劳累和长时间地紧张工作。注意气候变化，衣着要保暖，避免感冒。避免观看可引起激动与悲伤的影视及书刊杂志。要保持良好的心情，消除思想顾虑，以平常的心态对待任何事件。避免情绪激动，保持心理平衡。\n"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textColor="@color/bgColor"
+	            android:textSize="22sp" />
+	        </LinearLayout>
+	        
+
+	
+	</ScrollView>
+
+</LinearLayout>

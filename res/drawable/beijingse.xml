@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@color/lianglvse" android:state_selected="true"><shape android:shape="rectangle">
+            <corners android:radius="15dip" />
+        </shape></item>
+    <item android:drawable="@color/globle_Color" android:state_pressed="true"><shape android:shape="rectangle">
+            <corners android:radius="15dip" />
+        </shape></item>
+    <item android:drawable="@color/lianglvse"><shape android:shape="rectangle">
+            <corners android:radius="15dip" />
+        </shape></item>
+
+</selector>

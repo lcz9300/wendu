@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayouttitle"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:background="#1e1d1d" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/qianlvse" >
+
+            <ImageView
+                android:id="@+id/mingci_imageview_gohome"
+                style="@style/title_right_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/back_n" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/txt_sxzb"
+                android:textColor="#fff"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+		android:layout_height="0dp"
+	    android:layout_weight="1.63"
+	    android:background="@color/gray_white"
+	    android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+            android:text="\n概述：\n\u3000\u3000室性早搏或室性期前收缩，简称室早，是临床上非常常见的心律失常，其发生群相当广泛，包括正常健康人群和各种心脏病患者。室早是指窦房结激动尚未抵达心室之前，心室内某一异位兴奋灶提前激动而引起心室搏动。\n\u3000\u3000其特点为：QRS波提前出现，其前无P波，形态宽大畸形，T波与主波方向相反，时间多0.12s以上，其后有完全代偿间期。室早能引起心悸，心烦及颈部血管搏动，多源复杂的室早会加重原有的心脏病症状;急性心肌缺血时，某些类型的室早会诱发室速、室颤。合理的选用抗心律失常药物控制室早是很重要的。"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/bgColor"
+            android:textSize="22sp" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+            android:src="@drawable/shixingzaobo" />
+        
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+            android:text="预防和治疗：\n\u3000\u3000室性早搏的危害亦随着类型、是否触发快速性心律失常、心脏器质性病变严重程度等而有所不同。\n\u3000\u3000首先谈谈室性早搏中最为常见的偶发性室性早搏。偶发室性早搏属于良性室早，多由情绪激动、烟酒咖啡等引起，心脏无器质性病变。谈论单纯偶发室性早搏的危害是没有意义的，因为单纯偶发室性早搏基本没有危害，也不需要治疗。这种室性早搏一般在祛除诱因之后即可消失，对身体没有不良影响。\n\u3000\u3000有危害的早搏指的是有器质性心脏病变基础，如心肌病、冠心病等，或低血钾等引起的室性早搏。这种室性早搏的危害多为室早中的室性心动过速导致患者死亡率增加，但死亡的原因主要还是心脏病变本身。这种有预后意义的室性早搏需要在医生指导下用药，还需要针对诱发原因进行治疗。\n\u3000\u3000室性早搏本身并不会造成死亡。室性早搏可导致心脏病患者死亡率增加，严格说来不应算做室性早搏的危害，因为器质性心脏病基础上的室性早搏反映的是心脏整体功能不佳，导致死亡的还是心脏疾病本身。因此，器质性心脏病如心肌肥厚、冠心病等患者，出现室性早搏时需要谨慎注意，频发性室早有演变为严重心律失常、或导致心绞痛、心衰的可能。\n"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/bgColor"
+            android:textSize="22sp" />
+
+   		</LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
