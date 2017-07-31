@@ -28,9 +28,9 @@ public class HttpUtil {
     // 创建HttpClient对象
 
     public static HttpClient httpClient = new DefaultHttpClient();
-    public static final String BASE_URL =
-            "http://210.51.26.138:89/JavaPrj_hwd/";
-
+  /*  public static final String BASE_URL =
+            "http://210.51.26.138:89/JavaPrj_hwd/";*/
+    public static final String BASE_URL = "http://106.14.32.30:8080/hwdxingou/";
     /**
      * @param url 发送请求的URL
      * @return 服务器响应字符串

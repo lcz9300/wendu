@@ -49,11 +49,13 @@ import android.widget.Toast;
 
 import com.HWDTEMPT.hwdtempt.R.color;
 import com.HWDTEMPT.Util.DialogUtil;
+import com.HWDTEMPT.Util.HttpUtil;
 import com.HWDTEMPT.model.FindingPots;
 import com.HWDTEMPT.model.SQLiteHelp;
 import com.HWDTEMPT.model.StaticValue;
 import com.HWDTEMPT.tool.Analyse;
 import com.HWDTEMPT.tool.FindR;
+import com.HWDTEMPT.tool.NetWorkUtil;
 import com.HWDTEMPT.tool.RawDataArray;
 import com.HWDTEMPT.view.CircularSeekBar;
 import com.HWDTEMPT.view.wenduhomediagram;
@@ -90,7 +92,7 @@ public class bloodactivity extends Activity implements GetDegreeInterface, OnCli
             SHIXINGXINDONGGUOSU = 5, FANGXINGYIBO = 6, SHIXINGYIBO = 7, FANGCHAN = 8,XUEYA=9;
 //    final float wendu=10;
     final int DAY = 0, ZHOU = 1, YUE = 2, JI = 3;
-    
+    private NetWorkUtil netWorkUtil;
     private MyCircleView myCircleView;
     private TextView actualDegree;
     private Button clearBt,allBt,okBt;
@@ -213,7 +215,7 @@ public class bloodactivity extends Activity implements GetDegreeInterface, OnCli
         LayoutInflater inflater = this.getLayoutInflater();
         view1 = inflater.inflate(R.layout.bloodpress, null);
         setContentView(R.layout.bloodpress);  
-  
+        netWorkUtil = new NetWorkUtil(this);
         initView();
         myCircleView.setMinDegree(10);
         myCircleView.setMaxDegree(10);
@@ -241,14 +243,6 @@ public class bloodactivity extends Activity implements GetDegreeInterface, OnCli
       xindian=true;
        context = bloodactivity.this;
  
-     //   init();
-    
-     //   height_rate_data=(TextView) findViewById(R.id.wendu);
-  
-    //  lishiImageView = (ImageView)findViewById(R.id.lishijilu123);
-    //    lishiImageView.setOnClickListener(this);
-     //   baocunImageView = (ImageView)findViewById(R.id.baocun123);
-     //   baocunImageView.setOnClickListener(this);
        
         fanhuiImageView = (ImageView)findViewById(R.id.fanhui123);
         fanhuiImageView.setOnClickListener(this);
@@ -564,18 +558,6 @@ public class bloodactivity extends Activity implements GetDegreeInterface, OnCli
             }
         }).start();
         
-//      new Thread(new Runnable() {
-//          
-//          @Override
-//          public void run() {
-//              for (int j = 10; j<=(currentDegree-10)*3+10; j++) {
-//                  if (j<=(currentDegree-10)*3+10) {//23*3+10=79
-//                      myCircleView.setCurrentDegree(j);
-//                  }
-//                  myCircleView.postInvalidate();
-//              }
-//          }
-//      }).start();
     }
 
 
@@ -672,43 +654,7 @@ public class bloodactivity extends Activity implements GetDegreeInterface, OnCli
          
       
    
-    private void displayData2(String data) {
-       
-        if (data != null) {   
-         String data1=data;
-      
-      Log.e("<<<<<<<<<<<<<<shu33>>>>>>>>>>>>>>",data1);  
-    
-     //   height_rate_data.setText(data1); 
-      //   Log.e("524455444221", "mmmmmmmmmm");
-         
-  /*       Intent intent = new Intent();
-         intent.setClass(bloodactivity.this, MyCircleView.class);
-         intent.putExtra("data", data1);
-         startActivity(intent); 
-         */
- /*        List<String> fl = new ArrayList<String>();    // 泛型，这ArrayList只能放Float类型
-         fl.add(data1);
-         String[] f = new String[fl.size()];
-         for (int s = 0; s < fl.size(); s++) {
-             f[s] = fl.get(s);
-        //e("LOL1124556", f[0]);
-           Log.e("LOL1124556", f[0]);
-           Log.e("LOL1124556", f[1]);
-         }*/
-    /*     if (BluetoothLeService.celiangcuowuzt1) {
-             chaxunzhuangtai(); 
-             Log.e("524455444221", "mmmmmmmmmm");
-      } 
-    */
-         List<String> list = new ArrayList<String>();
-         list.add(data1);
-        // List<ArrayList<String>> dataListt = new ArrayList<ArrayList<String>>();
-         
-     //    dataListt.add(data1);
-        }
-      
-    }
+   
    
  
   
@@ -880,7 +826,28 @@ public class bloodactivity extends Activity implements GetDegreeInterface, OnCli
             } else if (BluetoothLeService.ACTION_DATA_AVAILABLE.equals(action))//有效数据
             {
                 //处理发送过来的数据
-                displayData2(intent.getStringExtra(BluetoothLeService.EXTRA_DATA2));             
+              //  displayData2(intent.getStringExtra(BluetoothLeService.EXTRA_DATA2));         
+            	
+            	if (netWorkUtil.isNetWorkAvailable()) {
+            		SimpleDateFormat sdf1 = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss",
+                            Locale.getDefault());
+                    String strd1 = sdf1.format(new Date());
+
+                    Map<String, String> map2 = new HashMap<String, String>();
+
+                    map2.put("uname", MainActivity.NAME);
+                    map2.put("date", strd1);
+                    map2.put("temp", BluetoothLeService.tt+"");
+                    String url = HttpUtil.BASE_URL + "addprameter.do?action=addprameter";
+                    try {
+						HttpUtil.postRequest(url, map2);
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+                    DisplayToast("上传完成");
+                    
+				}
                displayData(intent.getFloatExtra(wenduval, BluetoothLeService.tt));
                 displayData8(intent.getStringExtra(BluetoothLeService.EXTRA_DATA8)); 
                firstSaveBoolean=false;
@@ -1041,15 +1008,7 @@ public class bloodactivity extends Activity implements GetDegreeInterface, OnCli
     }else {
         super.onDestroy();
     }
-      
-     //   mBluetoothLeService.close();
-     //   unregisterReceiver(mGattUpdateReceiver);
-  //  unbindService(mServiceConnection);
- //   mBluetoothLeService.close();
-   // unregisterReceiver(mGattUpdateReceiver);
-    //   mBluetoothLeService.close();
-       
-     // mBluetoothLeService = null;
+     
          
     }
   
@@ -1124,101 +1083,9 @@ public void onClick(View view) {
    
     switch (view.getId()) {
       
-   /*     case R.id.baocun123:
-           
-          
-            String gaoStringv =String.valueOf(BluetoothLeService.tt);
-            //    String diStringv = low_rate_data.getText().toString().trim();
-            //    String xinlvStringv =heart_rate_data.getText().toString().trim();
-
-                sqlservice.insert_Bloodpre1(NAMEBl, CurrentDate1(),gaoStringv);
-                Log.e("77777777", gaoStringv.substring(0, 4)); 
-                firstSaveBoolean = true;
-                DisplayToast("保存完成");
-                Log.e("444443334444444", "3222222222");  
-                try {
-                    if (onqidong){
-                    if (firstSaveBoolean!=true)
-                    {
-                        String gaoStringv =String.valueOf(BluetoothLeService.tt);
-                        //    String diStringv = low_rate_data.getText().toString().trim();
-                        //    String xinlvStringv =heart_rate_data.getText().toString().trim();
-
-                            sqlservice.insert_Bloodpre1(NAMEBl, CurrentDate1(),gaoStringv);
-                            Log.e("77777777", gaoStringv.substring(0, 4)); 
-                            firstSaveBoolean = true;
-                         //   DisplayToast("保存完成");
-                                      
-                            SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMddHHmmss",
-                                    Locale.getDefault());
-                            String strd = sdf.format(new Date());   
-                            LayoutInflater inflater = LayoutInflater.from(bloodactivity.this);
-                            final View textEntryView = inflater.inflate(R.layout.wendulishi, null);
-                            final String Time = strd;
-                            final TextView resulttext0 = (TextView) textEntryView
-                                    .findViewById(R.id.wendujieguo);                        
-                            final List<String> Result = uService.wendu_sel(MainActivity.NAME, Time);
-                            
-                            float wendu=Float.parseFloat(Result.get(0));
-                            if (wendu<35.7f) {
-                         	   resulttext0.setText(Result.get(0)+"℃"+"   "+"偏低");
-     				    	}else if (wendu>=35.7f&&wendu<=37.5f) {
-     						   resulttext0.setText(Result.get(0)+"℃"+"   "+"正常");
-     				    	}else if (wendu>37.5f) {
-     						 resulttext0.setText(Result.get(0)+"℃"+"   "+"偏高");
-     					    }      
-         
-                            final AlertDialog.Builder builder = new AlertDialog.Builder(bloodactivity.this);
-                            builder.setCancelable(false);
-                            builder.setIcon(R.drawable.ic_launcher);
-                            builder.setTitle("温度值供参考");
-                            builder.setView(textEntryView);
-                            builder.setPositiveButton("保存", new DialogInterface.OnClickListener() {
-                                public void onClick(DialogInterface dialog, int whichButton) {
-                                    Toast.makeText(bloodactivity.this, "保存完成", Toast.LENGTH_SHORT).show();
-
-                                }
-                            });
-                            builder.setNegativeButton("删除", new DialogInterface.OnClickListener() {
-                                public void onClick(DialogInterface dialog, int whichButton) {
-
-                                    uService.deletevalue(MainActivity.NAME, Time);
-
-                                    File path = new File(Environment.getExternalStorageDirectory() + "//"
-                                            + "HWDAD"+"//" + Time + ".txt");
-                                    if (path.exists()) {
-                                        path.delete();
-
-                                    }
-                                    Toast.makeText(bloodactivity.this, "数据已经删除", Toast.LENGTH_SHORT).show();
-                                    mleHandler.obtainMessage(bleactivty.SAVEDATA).sendToTarget();
-
-                                }
-                            });
-                            builder.show();
-                            
-                            Log.e("444443334444444", "3222222222");
-                        }else {
-                            DisplayToast("不要再点我了，您刚刚保存过了...");
-                         //   Log.e("77777777", gaoStringv.substring(0, 4));
-                        }
-                    
-                    }else {
-                        DisplayToast("未检测到有效温度值");
-                        Log.e("6666666", "8888888888888");
-                    }
-                }
-                catch (Exception e) {
-                    // TODO: handle exception
-                    DisplayToast("保存失败");
-                }
-          
-            break;*/
+  
         case R.id.fanhui123:
-     /*      if (xueyaceliangkaishi==true) {
-                sendorder();     
-           }*/
-           //  System.exit(0);
+    
             wenduchuanzhi=false;
             finish();
             xindianqidong=true;

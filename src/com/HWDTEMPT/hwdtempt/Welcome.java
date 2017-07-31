@@ -42,6 +42,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 public class Welcome extends Activity implements Runnable {
+    private static final int PERMISSION_WRITE_EXTERNAL_STORAGE = 1;
     private CheckBox Rememberpassword;
     private EditText et_name, et_pwd;
     private Button btnOk;
@@ -49,9 +50,10 @@ public class Welcome extends Activity implements Runnable {
     private TextView btnRegister, btnForget;
     private View loginlist = null, firstpage = null;
     private SharedPreferences sp;
-    private Editor ed;
+    private SharedPreferences.Editor ed;
     private myAsynclogin asynclogin;
     private ProgressDialog dialog = null;
+  
     SQLiteHelp uservice = new SQLiteHelp(Welcome.this);
     private Handler myHandler = new Handler() {
 
@@ -66,8 +68,15 @@ public class Welcome extends Activity implements Runnable {
                     break;
 
                 case 1:
+
+
                     setContentView(loginlist);
+
                     initlogin();
+
+                    /*if (!netWorkUtil.isNetWorkAvailable()){
+                        Toast.makeText(Welcome.this,"手机网络未能连接到网络",Toast.LENGTH_SHORT);
+                    }*/
 
                     sp = getSharedPreferences("users", MODE_PRIVATE);
                     ed = sp.edit();
@@ -80,7 +89,7 @@ public class Welcome extends Activity implements Runnable {
                     }
 
                     // 将点击的checkBOx存入到sharedprefence中
-                    Rememberpassword.setOnClickListener(new OnClickListener() {
+                    Rememberpassword.setOnClickListener(new View.OnClickListener() {
 
                         @Override
                         public void onClick(View v) {
@@ -105,9 +114,14 @@ public class Welcome extends Activity implements Runnable {
         firstpage = inflater.inflate(R.layout.firstpage, null);
         setContentView(firstpage);
 
+       
+
         new Thread(this).start();
 
     }
+
+
+
 
     // 初始化登陆界面
     private void initlogin() {
@@ -115,7 +129,7 @@ public class Welcome extends Activity implements Runnable {
         Rememberpassword = (CheckBox) findViewById(R.id.checkBox1);// 记住密码
         et_name = (EditText) findViewById(R.id.et_UserName);
         et_pwd = (EditText) findViewById(R.id.et_UserPwd);
-        btnOk = (Button) findViewById(R.id.btn_Ok); 
+        btnOk = (Button) findViewById(R.id.btn_Ok);
         btnRegister = (TextView) findViewById(R.id.btn_Register);
         btnForget = (TextView) findViewById(R.id.btn_forget);
         btnOk.setOnClickListener(new ButtonListener());
@@ -125,35 +139,50 @@ public class Welcome extends Activity implements Runnable {
 
     public void run() {
 
-        try {
+       /*  try {
 
-            SharedPreferences preferences = getSharedPreferences("isFirstUse",
+           SharedPreferences preferences = getSharedPreferences("isFirstUse",
                     1);
             isFirstUse = preferences.getBoolean("isFirstUse", true);
 
-          
+            if (isFirstUse) {
+                startActivity(new Intent(Welcome.this, GuideActivity.class));
+                Welcome.this.finish();
+                setContentView(firstpage);
+
+            } else {
 
                 Thread.sleep(2000);
                 Message msg = new Message();
                 msg.what = 1;
                 myHandler.sendMessage(msg);
-            
-            Editor editor = preferences.edit();
+            }
+            SharedPreferences.Editor editor = preferences.edit();
             editor.putBoolean("isFirstUse", false);
             editor.commit();
         } catch (Exception e) {
 
+        }*/
+
+        try {
+            Thread.sleep(2000);
+            Message msg = new Message();
+            msg.what = 1;
+            myHandler.sendMessage(msg);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
         }
+
     }
 
-    class ButtonListener implements OnClickListener {
+    class ButtonListener implements View.OnClickListener {
 
         public void onClick(View v) {
             // TODO Auto-generated method stub
             switch (v.getId()) {
                 case R.id.btn_Ok:
                     /*netlogin();*/
-                    if (validate()) 
+                    if (validate())
                     {
                         login();
                     }
@@ -176,24 +205,24 @@ public class Welcome extends Activity implements Runnable {
             }
         }
     }
-    class myAsynclogin extends AsyncTask<Void, String, Void>{
-        
+    class myAsynclogin extends AsyncTask<Void, String, Void> {
+        String username,password;
         protected void onPreExecute(){
             super.onPreExecute();
             dialog = ProgressDialog.show(Welcome.this, "登录提示", "正在登录，请稍等...",false);
-            
+
+             username = et_name.getText().toString().trim();
+             password = et_pwd.getText().toString().trim();
+
+            ed.putString("oa_name", username);
+            ed.putString("oa_pass", password);
+            ed.commit();
         }
 
         @Override
         protected Void doInBackground(Void... arg0) {
-            // TODO Auto-generated method stub
-            String username = et_name.getText().toString().trim();
-            String password = et_pwd.getText().toString().trim();
-            
-            ed.putString("oa_name", username);
-            ed.putString("oa_pass", password);
-            ed.commit();
-            
+
+
             JSONObject jsonObj;
             try {
                 jsonObj = query(username, password);
@@ -203,10 +232,10 @@ public class Welcome extends Activity implements Runnable {
                 // TODO: handle exception
                 timeoutTest();
             }
-            
+
             return null;
         }
-        
+
         protected void onProgressUpdate(String... values){
             super.onProgressUpdate(values);
             dialog.dismiss();
@@ -217,9 +246,9 @@ public class Welcome extends Activity implements Runnable {
             String age = "";
             String userHeight = "";
             String useWeight = "";
-            if (values[0].equals(username)) {
+            if (values[0].equals("ok")) {
                 Toast.makeText(Welcome.this, "登陆成功", Toast.LENGTH_SHORT).show();
-                
+
                 UserInfo user = new UserInfo();
                 user.setUserName(username);
                 user.setUserPwd(password);
@@ -229,37 +258,38 @@ public class Welcome extends Activity implements Runnable {
                 user.setUserHeight(userHeight);
                 user.setUseWeight(useWeight);
                 uservice.register(user);
-                
+
                 Intent mIntent = new Intent();
-               mIntent.putExtra("username", username);
+                mIntent.putExtra("username", username);
                 mIntent.setClass(Welcome.this, MainActivity.class);
-                 startActivity(mIntent);
-                 Welcome.this.finish();
-                
-                
-                
+                startActivity(mIntent);
+                Welcome.this.finish();
+
+            }else if (values[0].equals("fa")){
+
+                //Toast.makeText(Welcome.this, "登陆失败", Toast.LENGTH_SHORT).show();
+                DialogUtil.showDialog(Welcome.this, "用户名或密码错", false);
             }else {
-                
-                Toast.makeText(Welcome.this, "登陆失败", Toast.LENGTH_SHORT).show();
-                DialogUtil.showDialog(Welcome.this, "登录失败，请检查用户名密码是否正确！", false);
+               // Toast.makeText(Welcome.this, "登陆失败", Toast.LENGTH_SHORT).show();
+                DialogUtil.showDialog(Welcome.this, "登陆失败，请重试", false);
             }
         }
-       
+
     }
     //登录超时为5秒钟
-    private void timeoutTest() {  
-        // TODO Auto-generated method stub  
-        new Timer().schedule(new TimerTask() {  
-  
-            @Override  
-            public void run() {  
-                Message msgMessage = new Message();  
-                msgMessage.what = 2;  
-                myHandler.sendMessage(msgMessage);  
-            }  
-        }, 10 * 1000);  
-    }  
-  //用户名服务器验证
+    private void timeoutTest() {
+        // TODO Auto-generated method stub
+        new Timer().schedule(new TimerTask() {
+
+            @Override
+            public void run() {
+                Message msgMessage = new Message();
+                msgMessage.what = 2;
+                myHandler.sendMessage(msgMessage);
+            }
+        }, 10 * 1000);
+    }
+    //用户名服务器验证
    /* public void netlogin()
     {
         if (validate())
@@ -279,8 +309,8 @@ public class Welcome extends Activity implements Runnable {
                         Welcome.this.finish();
                     }
                 });
-               
-                
+
+
             }
             else
             {
@@ -293,29 +323,29 @@ public class Welcome extends Activity implements Runnable {
 */
     /*private boolean loginPro()
     {
-       
-        
+
+
         String username = et_name.getText().toString().trim();
         String password = et_pwd.getText().toString().trim();
-        
+
         ed.putString("oa_name", username);
         ed.putString("oa_pass", password);
         ed.commit();
-        
-        
+
+
         JSONObject jsonObj;
         try {
             jsonObj = query(username, password);
             if (jsonObj.getString("username") != null);
             {
-               
+
                 Toast.makeText(Welcome.this, "登录成功,", Toast.LENGTH_LONG).show();
-                
+
                 return true;
             }
 
         } catch (Exception e) {
-             DialogUtil.showDialog(this, "服务器响应失败，请稍后再试！", false); 
+             DialogUtil.showDialog(this, "服务器响应失败，请稍后再试！", false);
             e.printStackTrace();
         }
         return false;
@@ -342,48 +372,43 @@ public class Welcome extends Activity implements Runnable {
             throws Exception
     {
         Map<String, String> map = new HashMap<String, String>();
-        map.put("username", username);
-        map.put("password", password);
+        map.put("uname", username);
+        map.put("passwd", password);
         String url = HttpUtil.BASE_URL + "logon.do?action=logon";
         JSONObject jsonback = new JSONObject(HttpUtil.postRequest(url, map));
         return jsonback;
 
     }
-  
+
     public void login() {
         // TODO Auto-generated method stub
         String name = et_name.getText().toString();
         String password = et_pwd.getText().toString();
-     // 将信息存入到users里面
+        // 将信息存入到users里面
         ed.putString("oa_name", name);
         ed.putString("oa_pass", password);
         ed.commit();
-        
-       
+
+
         flag = uservice.login(name, password);
-        
-       
         if (flag) {
             //Log.i("ECG", "登陆成功");
-            
-                Toast.makeText(this, "登陆成功", Toast.LENGTH_SHORT).show();
-                Intent intent2 = new Intent();
-                intent2.putExtra("flag", true);
-                intent2.putExtra("username", name);
-                intent2.setClass(Welcome.this, MainActivity.class);
-                startActivity(intent2);
-                Welcome.this.finish();
-           
-            
+            Toast.makeText(this, "登陆成功", Toast.LENGTH_SHORT).show();
+            Intent intent2 = new Intent();
+            intent2.putExtra("flag", true);
+            intent2.putExtra("username", name);
+            intent2.setClass(Welcome.this, MainActivity.class);
+            startActivity(intent2);
+            Welcome.this.finish();
         } else {
             asynclogin = new myAsynclogin();
             asynclogin.execute();
             Toast.makeText(this, "服务器验证...", Toast.LENGTH_SHORT).show();
-            
+
         }
-        
+
     }
-    
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         // TODO Auto-generated method stub

@@ -280,13 +280,13 @@ public class NetRegister extends Activity {
         String phone = mphone.getText().toString().trim();
         String tall = mtall.getText().toString().trim();
         String weihgt = mweight.getText().toString().trim();
-        /* String age = mage.getText().toString().trim(); */
+         String age = mage.getText().toString().trim(); 
         String ecgsex = ((RadioButton) NetRegister.this.findViewById(sexradio
                 .getCheckedRadioButtonId())).getText().toString();
         JSONObject jsObject;
 
         try {
-            jsObject = regadd(username, password, phone, tall, ecgsex, weihgt);
+            jsObject = regadd(username, password, phone, tall, ecgsex, weihgt,age);
             if (jsObject.getString("username") != null)
                 ;
             {
@@ -427,16 +427,18 @@ public class NetRegister extends Activity {
     // -----------设置URL携带数据格式-------------
     @SuppressWarnings("unused")
     private JSONObject regadd(String username, String password, String phone, String tall,
-            String ecgsex, String weihgt)
+            String ecgsex, String weihgt,String age)
             throws Exception
     {
         Map<String, String> map1 = new HashMap<String, String>();
-        map1.put("username", username);
-        map1.put("password", password);
+        map1.put("uname", username);
+        map1.put("passwd", password);
         map1.put("phone", phone);
-        map1.put("tall", tall);
-        map1.put("ecgsex", ecgsex);
-        map1.put("weihgt", weihgt);
+        map1.put("height", tall);
+        map1.put("gender", ecgsex);
+        map1.put("weight", weihgt);
+        map1.put("age", age);
+       // map1.put("iden", _miden);
         String url1 = HttpUtil.BASE_URL + "modifyuser.do?action=adduser";
         JSONObject regjsonback = new JSONObject(HttpUtil.postRequest(url1, map1));
         return regjsonback;

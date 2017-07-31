@@ -317,27 +317,7 @@ public class BluetoothLeService extends Service {
            datarlist.removeAll(datarlist);
 		}
         
- /*       if (datarec[0]==(byte)0x02&&datarec[1]==(byte)0x20&&datarec[2]==(byte)0xDD) {
-   
-                   int re1 = (int) (datarec[5] << 8);
-                   int re = (int) ((re1 + datarec[6]));
-                   int ss=(int)re;
-              //     int ss=(int)re&0xff;
-                 tt=(float)ss/10;
-                  intent.putExtra(EXTRA_DATA2, tt);
-                  sendBroadcast(intent);
-                     String reslut =tt+""+"¡ãC";
-                  //   String reslut =tt+""; 
-                         intent.putExtra(EXTRA_DATA2,reslut); 
-                        sendBroadcast(intent);
-                     //    getInstance().sendBroadcast(intent);
-                   Log.e("444444444443", "gggggggggg");
-                  bloodactivity.mleHandler.obtainMessage(bloodactivity.HATA1).sendToTarget();
-        
-       }*/
-   
- 
-   
+
 }
 
     public class LocalBinder extends Binder {
