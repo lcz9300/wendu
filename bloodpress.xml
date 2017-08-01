@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6E6FA"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="#00BFFF"
+        android:orientation="vertical" >
+
+<RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_gravity="center">
+ <ImageView
+            android:id="@+id/fanhui123"
+            style="@style/title_right_button"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/back_n" />
+            <TextView
+              android:id="@+id/texttitleblood"
+              android:layout_width="120dp"
+              android:layout_height="50dp"
+              android:layout_centerHorizontal="true"
+              android:gravity="center"
+              android:text="耳温测量"
+              android:textSize="25sp" 
+              android:textColor="#FFF8DC" />
+
+    
+
+            <TextView 
+           android:id="@+id/lanyalianjie1"
+               android:textSize="14sp"
+        	android:layout_width="80dp"	
+        	android:layout_height="30dp"
+        	android:gravity="center"
+        	android:text="蓝牙连接 "
+        	android:background="#00BFFF"
+        	android:layout_marginTop="25dp"
+        	android:layout_alignParentRight="true"
+        	 android:textColor="#00008B"
+                  />
+
+        </RelativeLayout>
+    </LinearLayout>
+  
+  <com.HWDTEMPT.view.MyCircleView
+        android:id="@+id/myCircleView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+   
+  <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0.2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:background="#00BFFF"
+        android:orientation="horizontal" >
+     
+        <TextView
+            android:id="@+id/ri_text0"
+            style="@style/qushi_color"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="#FFF8DC"
+            android:text="日" />
+
+        <TextView
+            android:id="@+id/zhou_text0"
+            style="@style/qushi_color"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="#FFF8DC"
+            android:text="周" />
+
+        <TextView
+            android:id="@+id/yue_text0"
+            style="@style/qushi_color"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="#FFF8DC"
+            android:text="月" />
+         <TextView
+            android:id="@+id/ji_text0"
+            style="@style/qushi_color"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="#FFF8DC"
+            android:text="季" />
+
+    </LinearLayout>
+  <ScrollView
+    
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/TextColor"
+    android:id="@+id/scroll_view"
+    android:scrollbars="vertical" >
+        
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/gray"
+        android:orientation="vertical" >
+
+        <HorizontalScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+        
+            android:background="#E6E6FA" 
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:id="@+id/linear00"
+                android:layout_width="fill_parent"
+                android:layout_height="350dp" >
+             
+           
+            </RelativeLayout>
+            
+        </HorizontalScrollView>
+
+       
+    </LinearLayout>
+
+</ScrollView>  
+ 
+</LinearLayout>
